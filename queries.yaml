@@ -1,0 +1,1767 @@
+advertisements:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: medium
+  - name: page
+  - name: ad_spot
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+android_subscriptions:
+  search:
+  - name: sku
+  - name: token
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+apn_devices:
+  search:
+  - name: id
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+apple_paid_features:
+  search:
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+assignments:
+  search:
+  - name: team_id
+  - name: event_id
+  - name: member_id
+  - name: started_before
+  - name: started_after
+  - name: id
+  - name: teamsnap_plus
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+availabilities:
+  search:
+  - name: team_id
+  - name: event_id
+  - name: member_id
+  - name: started_before
+  - name: started_after
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  - name: sort_event_id
+    prompt: Sort the returned dataset based on the event_id field, valid values are
+      'asc' or 'desc'.
+  - name: sort_start_date
+    prompt: Sort the returned dataset based on the start_date field, valid values
+      are 'asc' or 'desc'.
+availability_summaries:
+  search:
+  - name: team_id
+  - name: event_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+batch_invoice_line_items:
+  search:
+  - name: id
+  - name: batch_invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+batch_invoice_payment_schedule_details:
+  search:
+  - name: id
+  - name: batch_invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+batch_invoice_payment_schedules:
+  search:
+  - name: id
+  - name: batch_invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+batch_invoices:
+  search:
+  - name: id
+  - name: division_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+batch_invoices_aggregates:
+  search:
+  - name: division_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+broadcast_alerts:
+  search:
+  - name: id
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+broadcast_email_attachments:
+  search:
+  - name: id
+  - name: broadcast_email_id
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+broadcast_emails:
+  search:
+  - name: id
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  - name: sort_created_at
+    prompt: Sort the returned dataset based on the created_at field, valid values
+      are 'asc' or 'desc'.
+contact_email_addresses:
+  search:
+  - name: contact_id
+  - name: member_id
+  - name: team_id
+  - name: id
+  - name: email
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+contact_phone_numbers:
+  search:
+  - name: team_id
+  - name: id
+  - name: contact_id
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+contacts:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: user_id
+  - name: id
+  - name: can_receive_push_notifications
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+countries:
+  search:
+  - name: id
+  - name: name
+currencies:
+  search:
+  - name: id
+custom_data:
+  search:
+  - name: id
+  - name: team_id
+  - name: member_id
+  - name: custom_field_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+custom_fields:
+  search:
+  - name: id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_aggregates:
+  search:
+  - name: division_id
+  - name: ancestor_division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_behaviors:
+  search:
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_contact_email_addresses:
+  search:
+  - name: contact_id
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_contact_phone_numbers:
+  search:
+  - name: team_id
+  - name: id
+  - name: contact_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_contacts:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_events:
+  search:
+  - name: division_id
+  - name: id
+  - name: division_event_import_id
+  - name: division_location_id
+  - name: started_after
+  - name: is_game
+  - name: repeating_uuid
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  - name: sort_start_date
+    prompt: Sort the returned dataset based on the start_date field, valid values
+      are 'asc' or 'desc'.
+division_events_imports:
+  search:
+  - name: division_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_flipgive_widgets:
+  should_show_widget:
+  - name: division_id
+division_locations:
+  search:
+  - name: division_id
+  - name: team_id
+  - name: id
+  - name: persistent_uuid
+  - name: organization_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_member_email_addresses:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_member_phone_numbers:
+  search:
+  - name: team_id
+  - name: id
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_members:
+  search:
+  - name: team_id
+    prompt: Find a division member by the id of the team they are a commissioner of.
+  - name: division_id
+  - name: user_id
+  - name: id
+  - name: birthday_month
+    prompt: Find a division member by the month of their birthday.
+  - name: is_commissioner
+  - name: is_ownership_pending
+  - name: is_unassigned
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_members_preferences:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_rate_packages:
+  active:
+  - name: division_id
+  search:
+  - name: id
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_regsaver_options:
+  search:
+  - name: division_id
+    type: Integer
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  should_show_configure_modal:
+  - name: division_id
+    type: Integer
+division_stores:
+  search:
+  - name: division_id
+    type: Integer
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  should_show_configure_modal:
+  - name: division_id
+    type: Integer
+division_structure_health_data:
+  search:
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+division_team_standings:
+  search:
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+divisions:
+  active_divisions:
+  - name: user_id
+  active_trials:
+  - name: user_id
+  ancestors:
+  - name: id
+  children:
+  - name: id
+  - name: is_archived
+  - name: is_disabled
+  descendants:
+  - name: id
+  leaves:
+  - name: id
+  search:
+  - name: id
+  - name: organization_id
+  - name: persistent_uuid
+  - name: user_id
+  - name: parent_id
+  - name: is_root
+  - name: is_trial
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  tree:
+  - name: id
+  - name: persistent_uuid
+  - name: organization_id
+divisions_preferences:
+  search:
+  - name: id
+  - name: division_id
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+event_lineup_entries:
+  search:
+  - name: id
+  - name: team_id
+  - name: event_id
+  - name: event_lineup_id
+  - name: member_id
+event_lineups:
+  search:
+  - name: id
+  - name: event_id
+event_statistics:
+  search:
+  - name: id
+  - name: statistic_id
+  - name: event_id
+  - name: team_id
+events:
+  overview:
+  - name: team_id
+  search:
+  - name: team_id
+  - name: user_id
+  - name: location_id
+  - name: opponent_id
+  - name: started_after
+  - name: started_before
+  - name: repeating_uuid
+  - name: id
+  - name: is_game
+  - name: updated_since
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  - name: sort_start_date
+    prompt: Sort the returned dataset based on the start_date field, valid values
+      are 'asc' or 'desc'.
+  search_games:
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+facebook_pages:
+  search:
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+forecasts:
+  search:
+  - name: team_id
+  - name: event_id
+  - name: day_index
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+forum_posts:
+  search:
+  - name: forum_topic_id
+  - name: id
+  - name: division_member_id
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+forum_subscriptions:
+  search:
+  - name: forum_topic_id
+  - name: id
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+forum_topics:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+fundraising_campaigns:
+  search:
+  - name: id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+gcm_devices:
+  search:
+  - name: id
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+geocoded_locations:
+  search:
+  - name: country
+  - name: postal_code
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+health_check_questionnaire_template_questions:
+  search:
+  - name: id
+  - name: health_check_questionnaire_template_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+health_check_questionnaire_templates:
+  search:
+  - name: id
+  - name: division_id
+  - name: is_default_template
+  - name: type
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+health_check_questionnaires:
+  search:
+  - name: id
+  - name: event_id
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invitations:
+  search:
+  - name: code
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_line_items:
+  search:
+  - name: id
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_payment_options_amounts:
+  search:
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_payment_schedules:
+  search:
+  - name: id
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_payment_transactions:
+  search:
+  - name: id
+  - name: invoice_id
+  - name: invoice_payment_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_payments:
+  search:
+  - name: id
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_recipients:
+  search:
+  - name: id
+  - name: invoice_id
+  - name: batch_invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_recipients_invoices_aggregates:
+  search:
+  - name: member_ids
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_schedule_payment_options_amounts:
+  search:
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoice_schedule_payments_payment_options_amounts:
+  search:
+  - name: invoice_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoices:
+  search:
+  - name: id
+  - name: batch_invoice_id
+  - name: user_id
+  - name: status
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+invoicing_health_data:
+  search:
+  - name: division_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+league_custom_data:
+  search:
+  - name: id
+  - name: team_id
+  - name: member_id
+  - name: division_id
+  - name: league_custom_field_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+league_custom_fields:
+  search:
+  - name: id
+  - name: team_id
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+league_registrant_documents:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+locations:
+  search:
+  - name: team_id
+  - name: event_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+me:
+  search:
+  - name: id
+  - name: email
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_assignments:
+  search:
+  - name: assignment_id
+  - name: event_id
+  - name: member_id
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_balances:
+  search:
+  - name: member_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_email_addresses:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: email
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_files:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_links:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_participations:
+  search:
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_payments:
+  search:
+  - name: id
+  - name: member_id
+  - name: team_fee_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_phone_numbers:
+  search:
+  - name: team_id
+  - name: id
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_photos:
+  search:
+  - name: id
+  - name: member_id
+  - name: team_id
+  - name: height
+  - name: width
+  - name: crop
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_registration_signups:
+  search:
+  - name: member_id
+  - name: division_id
+  - name: id
+  - name: registration_signup_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+member_statistics:
+  search:
+  - name: id
+  - name: statistic_id
+  - name: member_id
+  - name: team_id
+members:
+  advanced_division_search:
+  - name: division_id
+    prompt: Id of the division and descendants to search
+  - name: id
+    prompt: Id of the member to search
+  - name: user_id
+    prompt: Id of the user to search
+  - name: is_commissioner
+    prompt: true/false - For all members in a division that are or are not a commissioner.
+      Not used if blank.
+  - name: birthday
+    prompt: date - Accepts advanced search operators 'less_than' and 'greater_than'.
+  - name: team_id
+    prompt: integer - Find all members in a division with the specified team_id(s).
+  - name: is_coach
+    prompt: true/false - Find all members in a division that are or are not a coach.
+      Not used if blank.
+  - name: is_manager
+    prompt: true/false - Find all members in a division that are or are not a team
+      manager. Not used if blank.
+  - name: is_non_player
+    prompt: true/false - Find all members in a division that are or are not a players.
+      Not used if blank.
+  - name: is_owner
+    prompt: true/false - Find all members in a division that are or are not owners.
+      Not used if blank.
+  - name: is_ownership_pending
+    prompt: true/false - Find all members in a division that are or are not pending
+      ownership. Not used if blank.
+  - name: gender
+    prompt: Male/Female - Find all members in a division with the specified gender.
+  - name: first_name
+    prompt: string - Accepts advanced search operators 'equals', 'contains' and 'starts_with'.
+  - name: last_name
+    prompt: string - Accepts advanced search operators 'equals', 'contains' and 'starts_with'.
+  - name: email
+    prompt: string - Accepts advanced search operators 'equals', 'contains' and 'starts_with'.
+  - name: custom_field
+    prompt: string - Required advanced search parameter of 'id' that should be the
+      id of the custom field to be searched on. Accepts advanced search operators
+      'equals', 'contains' and 'starts_with'.
+  - name: registration_form_id
+    prompt: string - Find all members in a division with the specified registration_form_id.
+  - name: registration_form_line_item_id
+    prompt: string - Find all members in a division who have selected the specified
+      registration_form_line_item_id.
+  - name: registration_form_line_item_option_id
+    prompt: string - Find all members in a division who have selected a given registration_form_line_item_option_id.
+  - name: is_assigned
+    prompt: true/false - For all members in a division that are assigned to a team.
+      Not used if blank.
+  - name: is_activated
+    prompt: true/false - For all members in a division that have a user. Not used
+      if blank.
+  - name: checkout_type
+    prompt: 'string - Search for a registration checkout type. Valid values are: "1"
+      - In Progress, "2" - Pay Now, "3" - Installment Plan, "4" - Pay Offline, "5"
+      - No Fees'
+  - name: signup_status
+    prompt: 'string - Search for a registration based on it''s signup status. Value
+      values are: "authorized" - Authorized, "refunded" - Refunded, "failed" - Failed,
+      "active" - Active, "canceled" - Canceled, "charged_back" - Charged Back, "on_checkout"
+      - On Checkout, "paid" - Paid'
+  - name: search_subdivisions
+    prompt: true/false - Search all the subdivisions of the division provided. True
+      by default.
+  - name: batch_invoice_id
+    prompt: Id of batch invoice to search
+  - name: invoice_status
+    prompt: 'string - Search for all members based on a selected batch_invoice_id
+      invoice status, valid values are: "open", "submitted", "pending", "paid", "canceled"'
+  - name: pending_assignments
+    prompt: string - Search pending assignments for members. "include", "exclude",
+      "only". "exclude" is the default
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  commissioners:
+  - name: team_id
+  - name: division_id
+  division_search:
+  - name: division_id
+    prompt: Id of the division and descendants to search
+  - name: is_unassigned
+    prompt: true/false - For all members in a division that aren't assigned to a team.
+      Not used if blank.
+  - name: is_activated
+    prompt: true/false - For all members in a division that have a user. Not used
+      if blank.
+  - name: is_commissioner
+    prompt: true/false - For all members in a division that are or are not a commissioner.
+      Not used if blank.
+  - name: is_ownership_pending
+    prompt: true/false - Find all members in a division that are or are not pending
+      ownership. Not used if blank.
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  importable_members:
+  - name: user_id
+  - name: include_archived_teams
+  managers:
+  - name: team_id
+  owner:
+  - name: team_id
+  personas:
+  - name: user_id
+  search:
+  - name: division_id
+  - name: team_id
+  - name: user_id
+  - name: id
+  - name: can_receive_push_notifications
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+members_preferences:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+message_data:
+  search:
+  - name: team_id
+  - name: user_id
+  - name: member_id
+  - name: contact_id
+  - name: message_type
+message_reply_statuses:
+  search:
+  - name: id
+messages:
+  search:
+  - name: team_id
+  - name: division_id
+  - name: member_id
+  - name: division_member_id
+  - name: message_id
+    prompt: message_id is deprecated and will be removed in a future version, use
+      message_source_id instead.
+  - name: message_source_id
+  - name: message_type
+  - name: contact_id
+  - name: user_id
+  - name: id
+  - name: thread_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+opponents:
+  search:
+  - name: team_id
+  - name: league_team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+opponents_results:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+partners_preferences:
+  search:
+  - name: user_id
+  - name: team_id
+  - name: member_id
+  - name: partner_id
+  - name: partner_name
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+partners_user_preferences:
+  search:
+  - name: user_id
+  - name: division_id
+  - name: partner_preference_id
+payment_method_wepay_credit_cards:
+  search:
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+payment_notes:
+  search:
+  - name: id
+  - name: member_payment_id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+payment_options:
+  search:
+  - name: id
+  - name: payment_provider_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+payment_providers:
+  search:
+  - name: id
+  - name: name
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+paypal_currencies:
+  search:
+  - name: id
+  - name: team_id
+plans:
+  search:
+  - name: id
+  - name: team_id
+plans_all:
+  search:
+  - name: id
+  - name: team_id
+program_members:
+  search:
+  - name: division_id
+  - name: member_name
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+program_memberships:
+  search:
+  - name: program_member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_dates_aggregates:
+  search:
+  - name: division_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_form_line_item_options:
+  search:
+  - name: id
+  - name: division_id
+  - name: registration_form_id
+  - name: registration_form_line_item_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_form_line_items:
+  search:
+  - name: registration_form_id
+  - name: id
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_forms:
+  search:
+  - name: division_id
+  - name: id
+  - name: is_retired
+  - name: registration_signup_id
+  - name: persistent_uuid
+  - name: organization_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_health_data:
+  search:
+  - name: division_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+registration_signup_statuses:
+  search:
+  - name: id
+registration_signups:
+  search:
+  - name: id
+root:
+  bulk_load:
+  - name: team_id
+    prompt: The team_id(s) to return results for, this can be a single id or a comma-separated
+      list of ids.
+  - name: scope_to
+    prompt: A comma separated list of singular types that you would like to scope
+      the rest of the related result sets to. For instance, scoping assignments to
+      events and providing a filter on events will return only assignments for the
+      events returned.
+  - name: types
+    prompt: A comma separated list of singular types that you want returned.
+  feature:
+  - name: id
+  - name: type
+  - name: feature_name
+  forecast:
+  - name: team_id
+  - name: event_id
+  - name: day_index
+  generate_firebase_token:
+  - name: team_id
+  - name: version
+  geocode:
+  - name: country
+  - name: postal_code
+  invitation_finder:
+  - name: email_address
+  messaging_permissions:
+  - name: team_id
+  partners_preferences:
+  - name: user_id
+  - name: team_id
+  - name: member_id
+  - name: partner_id
+  - name: partner_name
+  partners_user_preferences:
+  - name: user_id
+  - name: team_id
+  - name: partner_preference_id
+  query:
+  - name: scope_to
+    prompt: A comma separated list of singular types that you would like to scope
+      the rest of the related result sets to. For instance, scoping assignments to
+      events and providing a filter on events will return only assignments for the
+      events returned.
+  - name: types
+    prompt: A comma separated list of singular types that you want returned. You may
+      also specify a query by proceeding the type with a '__<query_name>'. For instance
+      'member__personas' will use 'personas' query on the 'members' endpoint.
+self:
+  bulk_load:
+  - name: team_id
+    prompt: The team_id(s) to return results for, this can be a single id or a comma-separated
+      list of ids.
+  - name: scope_to
+    prompt: A comma separated list of singular types that you would like to scope
+      the rest of the related result sets to. For instance, scoping assignments to
+      events and providing a filter on events will return only assignments for the
+      events returned.
+  - name: types
+    prompt: A comma separated list of singular types that you want returned.
+  feature:
+  - name: id
+  - name: type
+  - name: feature_name
+  forecast:
+  - name: team_id
+  - name: event_id
+  - name: day_index
+  generate_firebase_token:
+  - name: team_id
+  - name: version
+  geocode:
+  - name: country
+  - name: postal_code
+  invitation_finder:
+  - name: email_address
+  messaging_permissions:
+  - name: team_id
+  partners_preferences:
+  - name: user_id
+  - name: team_id
+  - name: member_id
+  - name: partner_id
+  - name: partner_name
+  partners_user_preferences:
+  - name: user_id
+  - name: team_id
+  - name: partner_preference_id
+  query:
+  - name: scope_to
+    prompt: A comma separated list of singular types that you would like to scope
+      the rest of the related result sets to. For instance, scoping assignments to
+      events and providing a filter on events will return only assignments for the
+      events returned.
+  - name: types
+    prompt: A comma separated list of singular types that you want returned. You may
+      also specify a query by proceeding the type with a '__<query_name>'. For instance
+      'member__personas' will use 'personas' query on the 'members' endpoint.
+sms_gateways:
+  search:
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+sponsors:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+sport_positions:
+  search:
+  - name: id
+  - name: sport_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+sports:
+  search:
+  - name: id
+  - name: team_id
+  - name: division_id
+statistic_aggregates:
+  search:
+  - name: id
+  - name: team_id
+  - name: statistic_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+statistic_data:
+  search:
+  - name: id
+  - name: event_id
+  - name: statistic_id
+  - name: team_id
+  - name: member_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+statistic_groups:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+statistics:
+  search:
+  - name: statistic_group_id
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+stripe_account_access_grants:
+  search:
+  - name: id
+  - name: division_id
+  - name: team_id
+  - name: stripe_account_id
+  - name: is_granted
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+stripe_accounts:
+  search:
+  - name: id
+  - name: division_id
+  - name: team_id
+  - name: is_active
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+suggested_assignments:
+  search:
+  - name: team_id
+  - name: teamsnap_plus
+team_fees:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_media:
+  search:
+  - name: team_id
+  - name: team_media_group_id
+  - name: member_id
+  - name: id
+  - name: height
+  - name: width
+  - name: crop
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_media_groups:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_medium_comments:
+  search:
+  - name: team_media_group_id
+  - name: team_medium_id
+  - name: member_id
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_names:
+  search:
+  - name: team_id
+  - name: id
+  - name: division_id
+  - name: ancestor_division_id
+  - name: is_active
+  - name: organization_id
+  - name: persistent_uuid
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_photos:
+  search:
+  - name: id
+  - name: team_id
+  - name: height
+  - name: width
+  - name: crop
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_public_sites:
+  search:
+  - name: id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+team_statistics:
+  search:
+  - name: id
+  - name: statistic_id
+  - name: team_id
+team_stores:
+  search:
+  - name: id
+  - name: team_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+teams:
+  active_teams:
+  - name: user_id
+  - name: division_id
+  available_for_statistic_import:
+  - name: sport_id
+  division_search:
+  - name: division_id
+  - name: user_id
+  - name: is_active
+  - name: is_commissioner
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  search:
+  - name: id
+  - name: team_id
+  - name: user_id
+  - name: division_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+  - name: sort_name
+    prompt: Sort the returned dataset based on the name field, valid values are 'asc'
+      or 'desc'.
+teams_paypal_preferences:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+teams_preferences:
+  search:
+  - name: id
+  - name: team_id
+  - name: user_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+teams_results:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+time_zones:
+  search:
+  - name: id
+  - name: team_id
+tracked_item_statuses:
+  search:
+  - name: team_id
+  - name: member_id
+  - name: tracked_item_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+tracked_items:
+  search:
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+tsl_metadata:
+  search:
+  - name: user_id
+  - name: id
+  - name: version
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+tsl_scores:
+  search:
+  - name: event_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+user_team_experiences:
+  search:
+  - name: user_id
+  - name: team_id
+  - name: id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+users:
+  search:
+  - name: id
+  - name: email
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+wepay_account_access_grants:
+  search:
+  - name: id
+  - name: team_id
+  - name: wepay_account_id
+  - name: is_granted
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+wepay_accounts:
+  search:
+  - name: id
+  - name: division_id
+  - name: user_id
+  - name: is_active
+  - name: wepay_account_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.
+wepay_invoice_payment_details:
+  search:
+  - name: id
+  - name: invoice_payment_id
+  - name: wepay_checkout_id
+  - name: reference_id
+  - name: page_size
+    prompt: The number of items to return for each page. Sending this parameter with
+      the query will enable paging for the returned collection.
+  - name: page_number
+    prompt: The number of the page to be returned. This requires that paging be turned
+      on by also providing the page_size parameter.

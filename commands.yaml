@@ -1,0 +1,671 @@
+apn_devices:
+  send_push:
+  - name: device_token
+assignments:
+  create_bulk_assignments:
+  - name: event_set
+    prompt: A comma-delimited string of keywords and/or event_ids. Keywords include
+      'future_events', 'future_games', and 'future_games_and_events'
+  - name: create_as_member_id
+    prompt: aaa
+  - name: team_id
+    prompt: aaa
+  - name: description
+    prompt: aaa
+  - name: member_id
+    prompt: aaa
+  reorder_assignments:
+  - name: event_id
+  - name: sorted_ids
+    prompt: An array of the ids in the order that they are to be moved to
+  send_assignment_emails:
+  - name: event_ids
+    prompt: A comma-delimited list of event ids.
+  - name: message
+  - name: sending_member_id
+  - name: team_id
+availabilities:
+  bulk_mark_unset_availabilities:
+  - name: status_code
+  - name: member_id
+  - name: started_after
+batch_invoices:
+  cancel:
+  - name: id
+  create_with_invoices:
+  - name: title
+  - name: description
+  - name: due_at
+  - name: is_recipient_paying_transaction_fees
+  - name: processing_fee_paid_by
+  - name: type
+  - name: division_id
+  - name: team_id
+  - name: batch_invoice_line_items
+broadcast_alerts:
+  bulk_delete:
+  - name: id
+broadcast_email_attachments:
+  upload_broadcast_email_attachment:
+  - name: broadcast_email_id
+  - name: member_id
+  - name: file
+broadcast_emails:
+  bulk_delete:
+  - name: id
+  unflag_spam:
+  - name: id
+contact_email_addresses:
+  invite:
+  - name: team_id
+  - name: contact_email_address_ids
+  - name: introduction
+division_events:
+  delete_events:
+  - name: division_event_ids
+division_events_imports:
+  create_events_import:
+  - name: division_id
+  - name: file
+  delete_imported_events:
+  - name: division_id
+  - name: division_events_import_id
+  process_import:
+  - name: id
+division_flipgive_widgets:
+  consumed:
+  - name: division_id
+    type: Integer
+division_locations:
+  import_from_division:
+  - name: destination_division_id
+  - name: source_location_ids
+division_regsaver_options:
+  dismiss_configure_modal:
+  - name: division_id
+    type: Integer
+  - name: forever
+    type: Boolean
+division_stores:
+  configure:
+  - name: division_id
+    type: Integer
+  - name: is_active
+    type: Boolean
+  dismiss_configure_modal:
+  - name: division_id
+    type: Integer
+  - name: forever
+    type: Boolean
+divisions:
+  archive:
+  - name: id
+  connect_season:
+  - name: division_id
+  - name: organization_id
+  - name: program_id
+  - name: season_id
+  - name: season_name
+  - name: league_owner_first_name
+  - name: league_owner_last_name
+  - name: league_owner_email
+  - name: league_owner_phone_number
+  - name: user_id
+  create_root:
+  - name: name
+  - name: sport_id
+  - name: country
+  - name: time_zone
+  - name: postal_code
+  - name: teams_in_plan
+  - name: league_owner_email
+  - name: league_owner_phone_number
+  - name: league_owner_first_name
+  - name: league_owner_last_name
+  create_season:
+  - name: name
+  - name: season_name
+  - name: organization_id
+  - name: program_id
+  - name: season_id
+  - name: sport_id
+  - name: plan_id
+  - name: payment_provider
+  - name: business_type
+  - name: billing_address
+  - name: country
+  - name: time_zone
+  - name: postal_code
+  - name: league_owner_email
+  - name: league_owner_first_name
+  - name: league_owner_last_name
+  - name: user_id
+  - name: from_division_id
+  - name: copy_division_structure
+  - name: copy_team_structure
+  disable:
+  - name: id
+  - name: persistent_uuid
+  enable:
+  - name: id
+  - name: persistent_uuid
+  update_plan:
+  - name: division_id
+  - name: persistent_uuid
+  - name: plan_id
+  - name: teams_in_plan
+divisions_preferences:
+  remove_division_logo:
+  - name: division_preferences_id
+  upload_division_logo:
+  - name: division_preferences_id
+  - name: file
+event_lineup_entries:
+  bulk_update_event_lineup_entries:
+  - name: templates
+    prompt: 'An array of the event_lineup_entry templates to be updated that correspond
+      to the template for the rel ''event_lineup_entries''. Each template must have
+      the following elements present: event_lineup_id, member_id, label, sequence.'
+events:
+  bulk_create:
+  - name: templates
+  - name: team_id
+  - name: notify_team_as_member_id
+  - name: notify_team
+  send_availability_reminders:
+  - name: id
+  - name: members_to_notify
+  - name: notify_team_as_member_id
+  update_final_score:
+  - name: id
+  - name: points_for_team
+  - name: points_for_opponent
+  - name: shootout_points_for_team
+  - name: shootout_points_for_opponent
+  - name: is_overtime
+  - name: is_shootout
+  - name: results
+  - name: results_url
+gcm_devices:
+  refresh_device:
+  - name: id
+  - name: registration_id
+  - name: user_id
+  - name: app_version
+  send_push:
+  - name: registration_id
+invoice_messages:
+  payment_request:
+  - name: batch_invoice_id
+  - name: member_ids
+  - name: status
+  - name: subject
+  - name: body
+invoice_payment_schedules:
+  update_default_payment_method:
+  - name: invoice_payment_schedule_id
+  - name: credit_card_id
+  update_stripe_default_payment_method:
+  - name: invoice_payment_schedule_id
+  - name: credit_card_id
+  - name: email_address
+invoice_payments:
+  pay_offline_cash:
+  - name: invoice_id
+  - name: amount
+  - name: detail
+  pay_offline_check:
+  - name: invoice_id
+  - name: amount
+  - name: detail
+  pay_stripe_credit_card:
+  - name: invoice_id
+  - name: credit_card_id
+  - name: amount
+  - name: email_address
+  pay_wepay_credit_card:
+  - name: invoice_id
+  - name: credit_card_id
+  - name: amount
+  pay_with_payment_schedule_stripe_credit_card:
+  - name: invoice_id
+  - name: credit_card_id
+  - name: email_address
+  - name: confirm_dates_amounts
+    prompt: 'Confirm dates and amounts presented (including fees) for each payment
+      (deposit and scheduled). Expected: [{''payment_date'': ''2018-05-08'', ''payment_total'':
+      258.47, ''is_deposit'': true}, {...}, ...]. If they don''t match the generated
+      dates and amounts, an error will be returned.'
+  pay_with_payment_schedule_wepay_credit_card:
+  - name: invoice_id
+  - name: credit_card_id
+  - name: confirm_dates_amounts
+    prompt: 'Confirm dates and amounts presented (including fees) for each payment
+      (deposit and scheduled). Expected: [{''payment_date'': ''2018-05-08'', ''payment_total'':
+      258.47, ''is_deposit'': true}, {...}, ...]. If they don''t match the generated
+      dates and amounts, an error will be returned.'
+  record_failed_stripe_payment:
+  - name: invoice_payment_id
+  - name: error_description
+  record_failed_wepay_payment:
+  - name: invoice_payment_id
+  - name: wepay_error_id
+  - name: error_description
+  record_paid_wepay_payment:
+  - name: invoice_payment_id
+  - name: credit_card_id
+  - name: amount
+  - name: teamsnap_processing_fee
+  - name: wepay_processing_fee
+  record_pending_wepay_payment:
+  - name: invoice_payment_id
+  - name: wepay_checkout_id
+  - name: credit_card_id
+  - name: reference_id
+  - name: amount
+  - name: teamsnap_processing_fee
+  - name: wepay_processing_fee
+  record_refunded_wepay_payment:
+  - name: invoice_payment_id
+  - name: credit_card_id
+  - name: amount
+  - name: refund_reason
+  - name: teamsnap_processing_fee
+  - name: wepay_processing_fee
+  refund_offline_cash:
+  - name: invoice_payment_id
+  - name: amount
+  - name: detail
+  refund_offline_check:
+  - name: invoice_payment_id
+  - name: amount
+  - name: detail
+  refund_online_payment:
+  - name: invoice_payment_id
+  - name: detail
+invoices:
+  cancel:
+  - name: id
+  create_from_batch_invoice:
+  - name: batch_invoice_id
+  - name: member_ids
+    prompt: An array of member ids for whom the invoices will be created.
+league_custom_fields:
+  reorder:
+  - name: sorted_ids
+  - name: division_id
+locations:
+  import_from_team:
+  - name: destination_team_id
+  - name: source_location_ids
+me:
+  send_email_validation: []
+  send_fomo_email:
+  - name: sender_user_id
+  - name: recipient_user_ids
+  - name: team_id
+  - name: message
+  send_trial_expiring_reminder: []
+member_email_addresses:
+  invite:
+  - name: team_id
+  - name: member_id
+  - name: member_email_address_ids
+  - name: introduction
+  - name: notify_as_member_id
+member_files:
+  upload_member_file:
+  - name: member_file_id
+  - name: file
+member_payments:
+  transaction:
+  - name: member_payment_id
+  - name: amount
+  - name: note
+members:
+  bulk_delete:
+  - name: member_id
+    prompt: The id of the member to be deleted, this can either be passed as a comma-delimited
+      list of integers or as an array if the post data is JSON.
+  delete_pending_member:
+  - name: member_id
+    prompt: The id of the pending member or pending members to be moved, this can
+      either be passed as a comma-delimited list of integers or as an array if the
+      post data is JSON.
+  - name: division_id
+    prompt: The id of the division or divisions to determine pending members, this
+      can either be passed as a comma-delimited list of integers or as an array if
+      the post data is JSON.
+  - name: team_id
+    prompt: The id of the team or teams to determine pending members, this can either
+      be passed as a comma-delimited list of integers or as an array if the post data
+      is JSON.
+  disable_member:
+  - name: member_id
+  generate_member_thumbnail:
+  - name: member_id
+  - name: x
+  - name: y
+  - name: width
+  - name: height
+  import_from_team:
+  - name: source_member_ids
+  - name: destination_team_id
+  - name: send_invites
+    prompt: Whether or not to create and send invitations for each imported member.
+      Valid values are either 'true' or 'false' and will default to 'false'
+  move_member:
+  - name: member_id
+    prompt: The id of the member or members to be moved, this can either be passed
+      as a comma-delimited list of integers or as an array if the post data is JSON.
+  - name: division_id
+  - name: team_id
+  - name: pending
+  move_pending_member:
+  - name: member_id
+    prompt: The id of the pending member or pending members to be moved, this can
+      either be passed as a comma-delimited list of integers or as an array if the
+      post data is JSON.
+  - name: division_id
+    prompt: The id of the division or divisions to determine pending members, this
+      can either be passed as a comma-delimited list of integers or as an array if
+      the post data is JSON.
+  - name: team_id
+    prompt: The id of the team or teams to determine pending members, this can either
+      be passed as a comma-delimited list of integers or as an array if the post data
+      is JSON.
+  remove_member_photo:
+  - name: member_id
+  set_commissioner_access:
+  - name: member_id
+  - name: division_id
+  upload_member_photo:
+  - name: member_id
+  - name: file
+  - name: x
+  - name: y
+  - name: width
+  - name: height
+messages:
+  bulk_delete:
+  - name: id
+  mark_message_as_read:
+  - name: id
+mobile_advertising_identities:
+  mobile_advertising_identities:
+  - name: device_advertising_uuid
+  - name: user_id
+  - name: platform
+  - name: ip_address
+program_members:
+  run_pipeline:
+  - name: division_ids
+    prompt: A comma-delimited list of division ids.
+  - name: action
+    prompt: A string with the originating action.
+root:
+  initiate_registration:
+  - name: email_address
+  - name: client_id
+  - name: redirect_uri
+  send_invitations:
+  - name: email_address
+  welcome:
+  - name: email_address
+  - name: client_id
+  - name: redirect_uri
+self:
+  initiate_registration:
+  - name: email_address
+  - name: client_id
+  - name: redirect_uri
+  send_invitations:
+  - name: email_address
+  welcome:
+  - name: email_address
+  - name: client_id
+  - name: redirect_uri
+sponsors:
+  remove_sponsor_logo:
+  - name: sponsor_id
+  upload_sponsor_logo:
+  - name: sponsor_id
+  - name: file
+statistic_data:
+  bulk_delete_statistic_data:
+  - name: member_id
+  - name: event_id
+  bulk_update_statistic_data:
+  - name: templates
+    prompt: 'An array of the statistic_datum templates to be updated that correspond
+      to the template for the rel ''statistic_datum''. Each template must have the
+      following elements present: team_id, event_id, statistic_id.'
+statistic_groups:
+  reorder_statistic_groups:
+  - name: team_id
+  - name: sorted_ids
+    prompt: An array of the ids in the order that they are to be moved to
+statistics:
+  import_from_team:
+  - name: source_team_id
+  - name: destination_team_id
+  import_from_template:
+  - name: destination_team_id
+  - name: sport_id
+  reorder_statistics:
+  - name: team_id
+  - name: sorted_ids
+    prompt: An array of the ids in the order that they are to be moved to
+stripe_account_access_grants:
+  grant:
+  - name: division_id
+  - name: team_id
+  - name: stripe_account_id
+  revoke:
+  - name: id
+stripe_accounts:
+  update_by_stripe_account_id:
+  - name: account_id
+  - name: is_merchant
+  - name: has_charges_enabled
+team_media:
+  assign_media_to_group:
+  - name: team_medium_ids
+    prompt: A comma delimited list of team medium ids
+  - name: team_media_group_id
+  bulk_delete_team_media:
+  - name: team_medium_ids
+    prompt: A comma delimited list of team medium ids
+  create_team_video_link:
+  - name: team_id
+  - name: member_id
+  - name: team_media_group_id
+  - name: description
+  - name: position
+  - name: video_url
+  facebook_share_team_medium:
+  - name: team_medium_id
+  - name: is_suppressed_from_feed
+    prompt: Whether or not to post this to the facebook news feed. Valid values are
+      either 'true' or 'false' and will default to 'false'
+  - name: caption
+    prompt: Caption for the team media.
+  - name: facebook_page_id
+    prompt: The id to the page on facebook to post to.
+  reorder_team_media:
+  - name: team_id
+  - name: sorted_ids
+    prompt: An array of the ids in the order that they are to be moved to.
+  rotate_team_medium_image:
+  - name: team_medium_id
+  - name: rotate_direction
+    prompt: The direction to rotate the image, valid valiuse are "clockwise" or "counterclockwise"
+  set_medium_as_member_photo:
+  - name: team_medium_id
+  - name: member_id
+  set_medium_as_team_photo:
+  - name: team_medium_id
+  upload_team_medium:
+  - name: team_id
+  - name: member_id
+  - name: media_format
+    prompt: The format of the media, either "image" or "file"
+  - name: team_media_group_id
+  - name: description
+  - name: position
+  - name: file
+team_media_groups:
+  facebook_share_team_media_group:
+  - name: team_media_group_id
+  - name: is_suppressed_from_feed
+    prompt: Whether or not to post this to the facebook news feed. Valid values are
+      either 'true' or 'false' and will default to 'false'
+  - name: album_name
+    prompt: The caption used when sharing the medium on facebook. This will default
+      to the description of the medium
+  - name: facebook_page_id
+    prompt: The id used by facebook of the page to post the medium to. If omitted,
+      this will go to the user's personal page.
+  reorder_team_media_groups:
+  - name: team_id
+  - name: sorted_ids
+    prompt: An array of the ids in the order that they are to be moved to
+team_public_sites:
+  remove_team_public_photo:
+  - name: team_public_site_id
+  upload_team_public_photo:
+  - name: team_public_site_id
+  - name: file
+  validate_subdomain:
+  - name: subdomain
+team_stores:
+  configure_team_store:
+  - name: team_id
+teams:
+  apply_promotion:
+  - name: team_ids
+  - name: promotion_name
+  - name: promotion_length
+  - name: plan_id
+  change_owner:
+  - name: team_id
+  - name: member_id
+  enable_fundraising:
+  - name: team_id
+  - name: goal_cents
+  invite:
+  - name: team_id
+  - name: contact_id
+  - name: member_id
+  - name: introduction
+  - name: notify_as_member_id
+  invite_team_owners:
+  - name: id
+  reset_statistics:
+  - name: team_id
+  send_upsell_message_from_contact:
+  - name: team_id
+  - name: contact_id
+  - name: feature
+  send_upsell_message_from_owner:
+  - name: team_id
+  - name: feature
+  toggle_team_visibility_on_dashboard:
+  - name: team_ids
+  update_team_plan:
+  - name: team_ids
+  - name: plan_id
+  update_time_zone:
+  - name: team_id
+  - name: time_zone
+  - deprecated: true
+    name: offset_team_times
+    prompt: '%{old} is deprecated and will be removed in a future version, use %{new}
+      instead.'
+teams_preferences:
+  remove_team_logo:
+  - name: team_preferences_id
+  remove_team_photo:
+  - name: team_preferences_id
+  upload_team_logo:
+  - name: team_preferences_id
+  - name: file
+  upload_team_photo:
+  - name: team_preferences_id
+  - name: file
+tsl_chats:
+  send_push:
+  - name: device_token
+  - name: event_id
+  - name: firebase_id
+  - name: member_id
+  - name: message
+  - name: team_id
+  - name: timestamp
+  - name: type
+  - name: url
+  - name: username
+tsl_photos:
+  upload:
+  - name: team_id
+  - name: event_id
+  - name: user_id
+  - name: redirect
+  - name: max_file_size
+  - name: max_file_count
+  - name: expires
+  - name: signature
+  - name: file1
+tsl_scores:
+  send_push:
+  - name: device_token
+  - name: event_id
+  - name: firebase_id
+  - name: game_state
+  - name: member_id
+  - name: opponent_name
+  - name: score_for
+  - name: score_against
+  - name: sport_score_style
+  - name: team_id
+  - name: team_name
+  - name: timestamp
+user_team_experiences:
+  record_occurrence_user_team_experience:
+  - name: experience
+  - name: team_id
+users:
+  send_email_validation: []
+  send_fomo_email:
+  - name: sender_user_id
+  - name: recipient_user_ids
+  - name: team_id
+  - name: message
+  send_trial_expiring_reminder: []
+wepay_account_access_grants:
+  grant:
+  - name: team_id
+  - name: wepay_account_id
+  revoke:
+  - name: id
+wepay_accounts:
+  create_with_access:
+  - name: team_id
+  - name: email
+  - name: first_name
+  - name: last_name
+  - name: account_name
+  - name: account_description
+  - name: country_code
+  record_wepay_account_data:
+  - name: reference_id
+  - name: wepay_account_id
+  - name: wepay_account_state
+  - name: wepay_access_token
+  - name: wepay_action_reasons
+  - name: wepay_disabled_at
+  - name: wepay_user_id
+  revoke_access:
+  - name: reference_id
+  send_confirmation:
+  - name: id
