@@ -4,7 +4,6 @@ from apiclient import APIClient, HeaderAuthentication, JsonResponseHandler
 from collection_json import Collection
 import json
 
-
 class ApiObject():
     rel = None
 
