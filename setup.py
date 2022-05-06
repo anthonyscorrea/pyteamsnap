@@ -6,7 +6,7 @@ LONG_DESCRIPTION = 'https://www.teamsnap.com/documentation'
 
 # Setting up
 setup(
-    name="teamsnap-python",
+    name="pyteamsnap",
     version=VERSION,
     author="Anthony Correa",
     author_email="a@correa.co",
