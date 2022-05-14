@@ -1,5 +1,6 @@
 __all__ = ['TeamSnap', 'Team', 'Event', 'Availability', 'Member', 'Location', 'Me']
 from apiclient import APIClient, HeaderAuthentication, JsonResponseHandler, JsonRequestFormatter
+import datetime
 
 class ApiObject():
     rel = None
@@ -43,20 +44,21 @@ class ApiObject():
             "template":{
                 "data": [{
                     "name":k,
-                    "value":v
+                    "value":str(v)
                 } for k,v in self.data.items()]
             }
         }
-        r = self.client.put_item(self.rel, data=data)
+        id = self.data.get('id')
+        r = self.client.put_item(self.rel, id=id, data=data)
         self.data = r
         return r
 
     def delete(self):
         self.client.delete_item(self.rel, id=self.data['id'])
 
-
 class Me (ApiObject):
     rel = "me"
+    type = "user"
     version = "3.866.0"
     template = {
             "data": [
@@ -103,6 +105,7 @@ class Me (ApiObject):
 
 class User (ApiObject):
     rel = "users"
+    type = "user"
     version = "3.866.0"
     template = {
             "data": [
@@ -146,6 +149,7 @@ class User (ApiObject):
 
 class Event (ApiObject):
     rel = "events"
+    type = "event"
     version = "3.866.0"
     template = {
         "data": [
@@ -274,6 +278,7 @@ class Event (ApiObject):
 
 class Team (ApiObject):
     rel = "teams"
+    type = "team"
     version = "3.866.0"
     template = {
         "data": [
@@ -338,6 +343,7 @@ class Team (ApiObject):
 
 class Availability (ApiObject):
     rel = "availabilities"
+    type = "availability"
     version = "3.866.0"
     template = {
                    "data": [
@@ -368,6 +374,7 @@ class Availability (ApiObject):
 
 class Member (ApiObject):
     rel = "members"
+    type = "member"
     version = "3.866.0"
     template = {
         "data": [
@@ -444,6 +451,7 @@ class Member (ApiObject):
 
 class Location (ApiObject):
     rel = "locations"
+    type = "location"
     version = "3.866.0"
     template = {
         "data": [
@@ -483,6 +491,7 @@ class Location (ApiObject):
 
 class Opponent (ApiObject):
     rel = "opponents"
+    type = "opponent"
     version = "3.866.0"
     template = {
         "data": [
@@ -513,6 +522,7 @@ class Opponent (ApiObject):
 
 class EventLineupEntry (ApiObject):
     rel = "event_lineup_entries"
+    type = "event_lineup_entry"
     version = "3.866.0"
     template = {
             "data": [
@@ -535,13 +545,30 @@ class EventLineupEntry (ApiObject):
             ]
         }
 
+    @classmethod
+    def search(cls, client, **kwargs):
+        # For some reason the query listed for search at this endpoint is for EventLineup, not EventLineupEntry
+        # this is a workaround
+        r = client.get(f"{client.link(cls.rel)}/search", params=kwargs)
+        results = client.parse_response(r)
+        [cls(client, rel=cls.rel, data=r) for r in results]
+        return [cls(client, rel=cls.rel, data=r) for r in results]
+
 class EventLineup (ApiObject):
     rel = "event_lineups"
+    type = "event_lineup"
+    version = "3.866.0"
+    template = {}
+
+class AvailabilitySummary (ApiObject):
+    rel = "availability_summaries"
+    type = "availability_summary"
     version = "3.866.0"
     template = {}
 
 class Statistics (ApiObject):
     rel = "statistics"
+    type = "statistic"
     version = "3.866.0"
     template = {
             "data": [
@@ -613,6 +640,33 @@ class TeamSnap(APIClient):
         d = {l['rel']:l['href'] for l in self._root_collection["links"]}
         return d.get(link_name)
 
+    def bulk_load(self, team_id, types, **kwargs):
+        """
+        Returns a heterogeneous collection of the specified types for a specified team or teams.
+        Additional filters can be passed into requested types by passing them in the url's querystring
+        as type__filter=value (i.e. ?event__start_date=2015-01-01).
+        Any filter can be passed that is available on the search for the specified type.
+        :param team_id:
+        :param types:
+        :param kwargs:
+        :return:
+        """
+        types_dict = {t.type:t for t in types}
+        r = self.query(
+            rel="self",
+            query="bulk_load",
+            types=",".join(types_dict.keys()),
+            team_id=team_id,
+            **kwargs
+        )
+
+        result = []
+        for item in r:
+            cls = types_dict[item['type']]
+            instance = cls(self, rel=cls.rel, data=item)
+            result.append(instance)
+        return result
+
     def _by_rel (self, url, k):
         try:
             {l['rel']: l for l in self._root_collection[k]}
@@ -646,8 +700,8 @@ class TeamSnap(APIClient):
         r = super(TeamSnap, self).post(f"{self.link(rel)}", data=data)
         return self.parse_response(r)[0]
 
-    def put_item(self, rel, data):
-        r = super(TeamSnap, self).post(f"{self.link(rel)}", data=data)
+    def put_item(self, rel, id, data):
+        r = super(TeamSnap, self).put(f"{self.link(rel)}/{id}", data=data)
         return self.parse_response(r)[0]
 
     def delete_item(self, rel, id):
@@ -661,22 +715,17 @@ class TeamSnap(APIClient):
         for item in response['collection'].get('items',[]):
             details = {}
             for detail in item['data']:
-                # TODO type casting and validation based on item['type']
-                details[detail['name']] = detail['value']
+                value = detail['value']
+                value_type = detail['type']
+                if value:
+                    if value_type == 'DateTime':
+                        value = datetime.datetime.strptime(value, '%Y-%m-%dT%H:%M:%S%z')
+                    elif value_type == 'Boolean':
+                        value = value == True
+                    elif value_type == 'Integer':
+                        value = int(value)
+                details[detail['name']] = value
             result.append(details)
 
         return result
         # return [{detail['name']: detail['value'] for detail in item} for item in items]
-
-    @classmethod
-    def parse_template(self, response):
-        result = []
-        items = [item for item in response['collection'].get('template', []).get('data',{})]
-        for item in response['collection'].get('items', []):
-            details = {}
-            for detail in item['data']:
-                # TODO type casting and validation based on item['type']
-                details[detail['name']] = detail['value']
-            result.append(details)
-
-        return result
