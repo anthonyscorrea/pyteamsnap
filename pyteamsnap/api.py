@@ -14,7 +14,10 @@ class ApiObject():
 
     @classmethod
     def search(cls, client, **kwargs):
-        results = client.query(cls.rel, "search", **kwargs)
+        try:
+            results = client.query(cls.rel, "search", **kwargs)
+        except ServerError as e:
+            pass
         return [cls(client,rel=cls.rel, data=r) for r in results]
 
     @classmethod
