@@ -1,4 +1,6 @@
 __all__ = ['TeamSnap', 'Team', 'Event', 'Availability', 'Member', 'Location', 'Me']
+
+import apiclient.exceptions
 from apiclient import APIClient, HeaderAuthentication, JsonResponseHandler, JsonRequestFormatter
 import datetime
 
@@ -16,7 +18,7 @@ class ApiObject():
     def search(cls, client, **kwargs):
         try:
             results = client.query(cls.rel, "search", **kwargs)
-        except ServerError as e:
+        except apiclient.exceptions.ServerError as e:
             pass
         return [cls(client,rel=cls.rel, data=r) for r in results]
 
