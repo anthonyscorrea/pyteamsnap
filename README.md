@@ -108,40 +108,40 @@ An unoffical python wrapper for the [TeamSnap API](https://www.teamsnap.com/docu
 ## Usage Example
 
   ```python
-  from pyteamsnap.api import TeamSnap, Me, Event, EventLineupEntries, Member
-  client = TeamSnap(token=TOKEN)
-  
-  # get authenticated user
-  me = Me(client)
-  
-  # get a list of team_ids for the user
-  managed_team_ids = me.data['managed_teams']
-  
-  # get a list of events for managed team
-  managed_team_id = me.data['managed_teams'][0]
-  events = Event.search(client, team_id=managed_team_id)
-  
-  # get an object with the object id of EVENT_ID 
-  event = Event.get(client, id=EVENT_ID)
-  
-  # get some information about the event
-  start_date = event.data['start_date']
-  
-  # create a new member
-  member = Member.new(client)
-  member.data['first_name'] = 'Ferguson'
-  member.post()
-  
-  # update a Member with id of MEMBER_ID
-  member = Member.get(client, id=MEMBER_ID)
-  member.data['last_name'] = 'Jenkins'
-  member.put()
-  
-  # delete a Member
-  member.delete()
-  
-  # perform a bulk load
-  list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=EVENT_ID)
+from pyteamsnap.api import TeamSnap, Me, Event, EventLineupEntry, Member
+client = TeamSnap(token=TOKEN)
+
+# get authenticated user
+me = Me(client)
+
+# get a list of team_ids for the user
+managed_team_ids = me.data['managed_teams']
+
+# get a list of events for managed team
+managed_team_id = me.data['managed_teams'][0]
+events = Event.search(client, team_id=managed_team_id)
+
+# get an object with the object id of EVENT_ID 
+event = Event.get(client, id=EVENT_ID)
+
+# get some information about the event
+start_date = event.data['start_date']
+
+# create a new member
+member = Member.new(client)
+member.data['first_name'] = 'Ferguson'
+member.post()
+
+# update a Member with id of MEMBER_ID
+member = Member.get(client, id=MEMBER_ID)
+member.data['last_name'] = 'Jenkins'
+member.put()
+
+# delete a Member
+member.delete()
+
+# perform a bulk load
+list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=EVENT_ID)
   ```
   
 
