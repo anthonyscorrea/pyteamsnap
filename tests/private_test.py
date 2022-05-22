@@ -8,6 +8,7 @@ TEAMSNAP_TEAM = getenv('TEAMSNAP_TEAM')
 TEAMSNAP_EVENT = getenv('TEAMSNAP_EVENT')
 
 c = TeamSnap(token=TEAMSNAP_TOKEN)
+me = Me(c)
 c.bulk_load(team_id=TEAMSNAP_TEAM,types=[Event, Member])
 
 pass
