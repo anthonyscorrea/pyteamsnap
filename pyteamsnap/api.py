@@ -104,7 +104,8 @@ class Me (ApiObject):
         }
 
     def __init__(self, client):
-        super().__init__(client=client, rel=self.rel, data=client.get(client.link(self.rel)))
+        data = client.parse_response(client.get(client.link(self.rel)))[0]
+        super().__init__(client=client, rel=self.rel, data=data)
 
 class User (ApiObject):
     rel = "users"
