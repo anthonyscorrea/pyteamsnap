@@ -2,7 +2,7 @@ import apiclient.exceptions
 from apiclient import APIClient, HeaderAuthentication, JsonResponseHandler, JsonRequestFormatter
 
 
-class ApiObject():
+class BaseApiObject():
     rel = None
     version = None
     template = None
@@ -59,7 +59,7 @@ class ApiObject():
     def delete(self):
         self.client.delete_item(self.rel, id=self.data['id'])
 
-class Me (ApiObject):
+class Me (BaseApiObject):
     rel = "me"
     type = "user"
     version = "3.866.0"
@@ -108,7 +108,7 @@ class Me (ApiObject):
         super().__init__(client=client, rel=self.rel, data=data)
 
 
-class User (ApiObject):
+class User (BaseApiObject):
     rel = "users"
     type = "user"
     version = "3.866.0"
@@ -152,7 +152,7 @@ class User (ApiObject):
             ]
         }
 
-class Event (ApiObject):
+class Event (BaseApiObject):
     rel = "events"
     type = "event"
     version = "3.866.0"
@@ -281,7 +281,7 @@ class Event (ApiObject):
             }
         ]}
 
-class Team (ApiObject):
+class Team (BaseApiObject):
     rel = "teams"
     type = "team"
     version = "3.866.0"
@@ -346,7 +346,7 @@ class Team (ApiObject):
         ]
     }
 
-class Availability (ApiObject):
+class Availability (BaseApiObject):
     rel = "availabilities"
     type = "availability"
     version = "3.866.0"
@@ -377,7 +377,7 @@ class Availability (ApiObject):
                    ]
                }
 
-class Member (ApiObject):
+class Member (BaseApiObject):
     rel = "members"
     type = "member"
     version = "3.866.0"
@@ -454,7 +454,7 @@ class Member (ApiObject):
         ]
     },
 
-class Location (ApiObject):
+class Location (BaseApiObject):
     rel = "locations"
     type = "location"
     version = "3.866.0"
@@ -494,7 +494,7 @@ class Location (ApiObject):
         ]
     }
 
-class Opponent (ApiObject):
+class Opponent (BaseApiObject):
     rel = "opponents"
     type = "opponent"
     version = "3.866.0"
@@ -525,7 +525,7 @@ class Opponent (ApiObject):
         ]
     }
 
-class EventLineupEntry (ApiObject):
+class EventLineupEntry (BaseApiObject):
     rel = "event_lineup_entries"
     type = "event_lineup_entry"
     version = "3.866.0"
@@ -559,19 +559,19 @@ class EventLineupEntry (ApiObject):
         [cls(client, rel=cls.rel, data=r) for r in results]
         return [cls(client, rel=cls.rel, data=r) for r in results]
 
-class EventLineup (ApiObject):
+class EventLineup (BaseApiObject):
     rel = "event_lineups"
     type = "event_lineup"
     version = "3.866.0"
     template = {}
 
-class AvailabilitySummary (ApiObject):
+class AvailabilitySummary (BaseApiObject):
     rel = "availability_summaries"
     type = "availability_summary"
     version = "3.866.0"
     template = {}
 
-class Statistics (ApiObject):
+class Statistics (BaseApiObject):
     rel = "statistics"
     type = "statistic"
     version = "3.866.0"
@@ -623,5 +623,5 @@ class Statistics (ApiObject):
             ]
         }
 
-class MemberStatistics (ApiObject):
+class MemberStatistics (BaseApiObject):
     rel = "member_statistics"
