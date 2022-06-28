@@ -108,7 +108,8 @@ An unoffical python wrapper for the [TeamSnap API](https://www.teamsnap.com/docu
 ## Usage Example
 
   ```python
-from pyteamsnap.api import TeamSnap, Me, Event, EventLineupEntry, Member
+from pyteamsnap.client import TeamSnap
+from pyteamsnap.objects import Me, Event, EventLineupEntry, Member
 client = TeamSnap(token=TOKEN)
 
 # get authenticated user
@@ -121,7 +122,7 @@ managed_team_ids = me.data['managed_teams']
 managed_team_id = me.data['managed_teams'][0]
 events = Event.search(client, team_id=managed_team_id)
 
-# get an object with the object id of EVENT_ID 
+# get an object with the object id of EVENT_ID
 event = Event.get(client, id=EVENT_ID)
 
 # get some information about the event
@@ -143,7 +144,7 @@ member.delete()
 # perform a bulk load
 list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=EVENT_ID)
   ```
-  
+
 
 <p style="text-align:right;">(<a href="#top">back to top</a>)</p>
 
