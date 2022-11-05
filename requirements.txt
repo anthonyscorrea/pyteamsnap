@@ -1,2 +1,2 @@
 api-client
-collection_json
+typing-extensions

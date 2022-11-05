@@ -17,16 +17,16 @@ test_requirements = [ ]
 setup(
     author="Anthony Correa",
     author_email='a@correa.co',
-    python_requires='>=3.6',
+    python_requires='>=3.8',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta'
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
     description="An unoffical wrapper for the TeamSnap API",
     install_requires=requirements,
@@ -36,9 +36,9 @@ setup(
     keywords='pyteamsnap',
     name='pyteamsnap',
     packages=find_packages(include=['pyteamsnap', 'pyteamsnap.*']),
-    test_suite='tests',
+    test_suite='unittests',
     tests_require=test_requirements,
     url='https://github.com/anthonyscorrea/pyteamsnap',
-    version='0.1.0',
+    version='0.2.0',
     zip_safe=False,
 )
