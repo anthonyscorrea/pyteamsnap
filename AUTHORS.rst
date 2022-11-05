@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Anthony Correa <a@correa.co>
+* Anthony Correa <https://github.com/anthonyscorrea>
 
 Contributors
 ------------

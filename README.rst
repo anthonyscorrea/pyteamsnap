@@ -1,240 +1,120 @@
-<div id="top"></div>
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is n optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<!-- PROJECT LOGO -->
-<br />
-<div style="text-align:center;">
-  <a href="https://github.com/anthonyscorrea/pyteamsnap">
-    <img src="https://www.teamsnap.com/images/logo.svg" alt="Logo" width="160" height="80">
-  </a>
-
-<h3 style="text-align:center;">pyteamsnap</h3>
+==========
+pyteamsnap
+==========
 
-  <p style="text-align:center;">
-    Unofficial TeamSnap API wrapper for python.
-    <br />
-    ·
-    <a href="https://github.com/anthonyscorrea/pyteamsnap/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/anthonyscorrea/pyteamsnap/issues">Request Feature</a>
-  </p>
-</div>
-
 
+.. image:: media/pyteamsnap_logo.svg
+    :width: 75%
+    :align: center
+    :alt: TeamSnap Logo
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
 
+An unofficial python wrapper for the `TeamSnap API <https://www.teamsnap.com/documentation/apiv3>`_. A work in progress.
 
+Installation
+------------
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-An unoffical python wrapper for the [TeamSnap API](https://www.teamsnap.com/documentation/apiv3). A work in progress.
+Install **pyteamsnap** from GitHub
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
-
+.. code-block:: console
 
+    $ pip install git+https://github.com/anthonyscorrea/pyteamsnap
 
-### Built With
-
-* [api-client](https://github.com/MikeWooster/api-client)
-* [collection-json](https://github.com/ricardokirkner/collection-json.python)
-
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
+Getting Started
+---------------
 
-### Prerequisites
+To connect to TeamSnap, get OAuth 2 Credentials from TeamSnap at `https://auth.teamsnap.com/ <https://auth.teamsnap.com/login>`_ (`TeamSnap Documentation <https://www.teamsnap.com/documentation/apiv3/authorization>`_)
 
-* [api-client](https://github.com/MikeWooster/api-client)
-  ```shell
-  pip install api-client
-  ```
-* [collection-json](https://github.com/ricardokirkner/collection-json.python)
-  ```shell
-  pip install json-collection
-  ```
+.. code-block:: python
 
-### Installation
+    from pyteamsnap.client import TeamSnap
+    client = TeamSnap(token=TOKEN)
 
-1. Get OAuth 2 Credentials from TeamSnap at [https://auth.teamsnap.com/](https://auth.teamsnap.com/login) ([TeamSnap Documentation](https://www.teamsnap.com/documentation/apiv3/authorization))
-2. Install pyteamsnap
-      ```shell
-      pip install git+https://github.com/anthonyscorrea/pyteamsnap
-      ```
+You can use pyteamsnap constructors in pyteamsnap models to create instances.
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
+Getting the user object for the authenticated user.
 
-<!-- USAGE EXAMPLES -->
-## Usage Example
+.. code-block:: python
 
-  ```python
-from pyteamsnap.client import TeamSnap
-from pyteamsnap.objects import Me, Event, EventLineupEntry, Member
-client = TeamSnap(token=TOKEN)
+    >>> from pyteamsnap.models import Me
 
-# get authenticated user
-me = Me(client)
+    >>> me = Me(client)
 
-# get a list of team_ids for the user
-managed_team_ids = me.data['managed_teams']
+    >>> me
+    TeamSnap<User:00000000> "FirstName LastName"
 
-# get a list of events for managed team
-managed_team_id = me.data['managed_teams'][0]
-events = Event.search(client, team_id=managed_team_id)
+There is only one "Me" for a session, so no searching required.
 
-# get an object with the object id of EVENT_ID
-event = Event.get(client, id=EVENT_ID)
+Information can be accessed using keys just like a dictionary. See `documentation <https://anthonyscorrea.github.io/pyteamsnap/>`_ for each models' ``data`` property for a list of available keys.
 
-# get some information about the event
-start_date = event.data['start_date']
+A few examples:
 
-# create a new member
-member = Member.new(client)
-member.data['first_name'] = 'Ferguson'
-member.post()
+.. code-block:: python
 
-# update a Member with id of MEMBER_ID
-member = Member.get(client, id=MEMBER_ID)
-member.data['last_name'] = 'Jenkins'
-member.put()
+    >>> managed_teams = me['managed_teams']
 
-# delete a Member
-member.delete()
+    >>> managed_teams
+    [TeamSnap<Team:00000000> "TeamName"]
 
-# perform a bulk load
-list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=EVENT_ID)
-  ```
+    >>> team = managed_teams[0]
 
+    >>> team['name']
+    TeamName
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
+Objects have a search function, where search criteria is passed as keyword arguments
 
+.. code-block:: python
 
-<!-- ROADMAP -->
-## Roadmap
+    >>> from pyteamsnap.models import Event
 
-Implemented objects
-- [X] Me
-- [X] User
-- [X] Event
-- [X] Team
-- [X] Availability
-- [X] Member
-- [X] Location
-- [X] Opponent
-- [X] EventLineupEntry
-- [X] EventLineup
-- [X] AvailabilitySummary
+    >>> events = Event.search(client, team_id=team['id'])
 
-Implemented Queries
-- [x] search
-- [x] bulk_load
+    >>> events
+    [Teamsnap<Event:00000000> "Event Title", TeamSnap<Event:00000001> "Event Title"]
 
-Implemented Actions
-- [x] create
-- [x] read
-- [x] update
-- [x] destroy
+    >>> event = events[0]
 
-Implemented objects, but not tested.
-- [ ] Statistics
-- [ ] MemberStatistics
+    >>> event['start_date']
+    datetime.datetime(2000, 1, 1, 12, 00, 00, 0)
 
-See the [open issues](https://github.com/anthonyscorrea/pyteamsnap/issues) for a full list of proposed features (and known issues).
+Objects can be retrieved singularly with an id.
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
+.. code-block:: python
 
+    >>> event = Event.get(client, 00000000)
 
+    >>> event
+    TeamSnap<Event:00000000> "Event Title"
 
-<!-- CONTRIBUTING -->
-## Contributing
+Objects can be created, updated, and deleted (as permissions allow).
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+.. code-block:: python
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+    >>> from pyteamsnap import Member
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+    >>> new_member = Member.new(client)
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
+    >>> new_member['first_name'] = 'Ferguson'
 
+    >>> new_member['last_name'] = 'Jenkins'
 
+    >>> member.post()
+    TeamSnap<Member:00000001> "Ferguson Jenkins"
 
-<!-- LICENSE -->
-## License
+    >>> member['jersey_number'] = 31
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+    >>> member.put()
 
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
+    >>> member.delete()
 
+To load a hetereogeneous list of objects given parameters, the ``bulk_load`` function can be used
 
+.. code-block:: python
 
-<!-- CONTACT -->
-## Contact
+    >> list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=00000001)
+    [TeamSnap<Event:00000001> "Event Title", TeamSnap<Member:00000000> "Ferguson Jenkins"]
 
-Your Name - [@anthonyscorrea](https://twitter.com/anthonyscorrea) - a@correa.co
+Documentation
+-------------
 
-Project Link: [https://github.com/anthonyscorrea/pyteamsnap](https://github.com/anthonyscorrea/pyteamsnap)
-
-<p style="text-align:right;">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/anthonyscorrea/pyteamsnap.svg?style=for-the-badge
-[contributors-url]: https://github.com/anthonyscorrea/pyteamsnap/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/anthonyscorrea/pyteamsnap.svg?style=for-the-badge
-[forks-url]: https://github.com/anthonyscorrea/pyteamsnap/network/members
-[stars-shield]: https://img.shields.io/github/stars/anthonyscorrea/pyteamsnap.svg?style=for-the-badge
-[stars-url]: https://github.com/anthonyscorrea/pyteamsnap/stargazers
-[issues-shield]: https://img.shields.io/github/issues/anthonyscorrea/pyteamsnap.svg?style=for-the-badge
-[issues-url]: https://github.com/anthonyscorrea/pyteamsnap/issues
-[license-shield]: https://img.shields.io/github/license/anthonyscorrea/pyteamsnap.svg?style=for-the-badge
-[license-url]: https://github.com/anthonyscorrea/pyteamsnap/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/anthonyscorrea
-[product-screenshot]: images/screenshot.png
+`Documentation can be found here. <https://anthonyscorrea.github.io/pyteamsnap/>`_
