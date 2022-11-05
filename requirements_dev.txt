@@ -2,7 +2,6 @@ bump2version==0.5.11
 flake8==5.0
 tox==3.27
 black==22.10
-Sphinx==5.3
 vcrpy==4.2
 jinja2==3.1
 python-dotenv==0.21

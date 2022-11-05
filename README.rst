@@ -45,7 +45,7 @@ Getting the user object for the authenticated user.
 
 There is only one "Me" for a session, so no searching required.
 
-Information can be accessed using keys just like a dictionary. See model's documentation dor its ``data`` property for a list of available keys.
+Information can be accessed using keys just like a dictionary. See `documentation <https://anthonyscorrea.github.io/pyteamsnap/>`_ for each models' ``data`` property for a list of available keys.
 
 A few examples:
 
@@ -113,3 +113,8 @@ To load a hetereogeneous list of objects given parameters, the ``bulk_load`` fun
 
     >> list_of_ts_objects = client.bulk_load(team_id = TEAM_ID, types = [Event, Member], event__id=00000001)
     [TeamSnap<Event:00000001> "Event Title", TeamSnap<Member:00000000> "Ferguson Jenkins"]
+
+Documentation
+-------------
+
+`Documentation can be found here. <https://anthonyscorrea.github.io/pyteamsnap/>`_
