@@ -6,17 +6,11 @@ class Opponent(BaseApiObject):
     type = "opponent"
     version = "3.866.0"
 
-    @property
-    def data(self):
-        """Data dictionary for object
-
-        :return: dict: dict with keys:
-        - name
-        - contacts_name
-        - contacts_phone
-        - contacts_email
-        - notes
-        - team_id
-        - type
-        """
-        return super().data
+    __slots__ = [
+        'name',
+        'contacts_name',
+        'contacts_phone',
+        'contacts_email',
+        'notes',
+        'team_id',
+    ]

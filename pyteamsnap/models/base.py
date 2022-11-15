@@ -4,15 +4,27 @@ from apiclient import (
     APIClient,
 )
 import typing as T
+from abc import ABC
+from itertools import chain
+
 
 # Import "preview" of Self typing
 # https://stackoverflow.com/a/70932112
 from typing_extensions import Self
 
+class NotPossibleError(Exception):
+    """Raised for actions that are not possible to perform this action per API"""
+    pass
 
-class BaseApiObject:
+class BaseApiObject(ABC):
     rel: str = None
     version: str = None
+
+    __slots__ = [
+        'client',
+        'id',
+        'id_',
+    ]
 
     def __init__(
         self, client: APIClient, data: T.Dict[str, T.Union[str, list]] = {}
@@ -23,25 +35,28 @@ class BaseApiObject:
         :param data: Data to instantiate instance, defaults to empty dict.
         """
         self.client = client
-        self._data = data
-        self.rel = self.__class__.rel
-        """rel: Relationship between a linked resource and the current document"""
+
+        slots = list(chain.from_iterable(getattr(cls, '__slots__', []) for cls in self.__class__.__mro__))
+        for k, v in data.items():
+            if k == "id" :
+                setattr(self, 'id', v) #TODO remove this, here for backward compatibility, but bad idea
+                setattr(self, 'id_', v)
+            elif k in ['type', 'rel']: #read only, inherit to class type
+                continue
+            elif k in slots:
+                setattr(self, k, v)
+            else:
+                # print(f'Warning: {k} not in {self}')
+                pass
+        pass
+
+
+    def __str__(self):
+        return self.name
 
     def __repr__(self):
-        return f'TeamSnap<{self.__class__.__name__}:{self.id}> "{self.__str__()}"'
+        return f'<TeamSnap {self.__class__.__name__} id={self.id_} name="{self.rel}">'
 
-    def __getitem__(self, key):
-        return self._data.__getitem__(key)
-
-    def __setitem__(self, key, newvalue):
-        return self._data.__setitem__(key, newvalue)
-
-    def __iter__(self):
-        return iter(self._data.items())
-
-    @property
-    def id(self) -> int:
-        return self._data["id"]
 
     @property
     def data(self) -> T.Dict[str, T.Union[str, list]]:
@@ -49,7 +64,8 @@ class BaseApiObject:
 
         :return: dict: dict with keys:
         """
-        return self._data
+        slots = chain.from_iterable(getattr(cls, '__slots__', []) for cls in self.__class__.__mro__)
+        return {k:getattr(self, k, None) for k in slots}
 
     @classmethod
     def search(cls, client: APIClient, **kwargs):
@@ -62,11 +78,11 @@ class BaseApiObject:
     @classmethod
     def get(cls, client: APIClient, id: T.Union[int, str]) -> Self:
         r = client.get(f"{client.link(cls.rel)}/{id}")
-        return cls(client, cls.rel, client.parse_response(r)[0])
+        return cls(client, client.parse_response(r)[0])
 
     @classmethod
     def new(cls, client: Self) -> Self:
-        return cls(client, cls.rel)
+        return cls(client)
 
     def post(self) -> Self:
         data = {
@@ -75,7 +91,6 @@ class BaseApiObject:
             }
         }
         r = self.client.post_item(self.rel, data=data)
-        self._data = r
         return self
 
     def put(self) -> Self:
@@ -86,7 +101,6 @@ class BaseApiObject:
         }
         id = self.data.get("id")
         r = self.client.put_item(self.rel, id=id, data=data)
-        self._data = r
         return self
 
     def delete(self):

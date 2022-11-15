@@ -6,10 +6,15 @@ class AvailabilitySummary(BaseApiObject):
     type = "availability_summary"
     version = "3.866.0"
 
-    @property
-    def data(self):
-        """Data dictionary for object
-
-        :return: dict: dict with keys:
-        """
-        return super().data
+    __slots__ = [
+        "event_id",
+        "team_id",
+        "going_count",
+        "not_going_count",
+        "maybe_count",
+        "unknown_count",
+        "player_going_count",
+        "player_not_going_count",
+        "player_maybe_count",
+        "player_unknown_count",
+    ]

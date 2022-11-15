@@ -6,16 +6,16 @@ class EventLineupEntry(BaseApiObject):
     type = "event_lineup_entry"
     version = "3.866.0"
 
-    @property
-    def data(self):
-        """
-        :return: dict: dict with strings:
-        - member_id
-        - sequence
-        - label
-        - type
-        """
-        return super().data
+    __slots__ = [
+        "event_lineup_id",
+        "event_id",
+        "member_id",
+        "sequence",
+        "label",
+        "member_name",
+        "member_photo",
+        "availability_status_code"
+    ]
 
     @classmethod
     def search(cls, client, **kwargs):
@@ -23,5 +23,5 @@ class EventLineupEntry(BaseApiObject):
         # this is a workaround
         r = client.get(f"{client.link(cls.rel)}/search", params=kwargs)
         results = client.parse_response(r)
-        [cls(client, rel=cls.rel, data=r) for r in results]
-        return [cls(client, rel=cls.rel, data=r) for r in results]
+        [cls(client, data=r) for r in results]
+        return [cls(client, data=r) for r in results]

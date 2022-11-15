@@ -12,32 +12,23 @@ class Team(BaseApiObject):
     type = "team"
     version = "3.866.0"
 
-    # Override this class property to add docstring
-    # should not change functionality. Probably a better
-    # to do this...
-    @property
-    def data(self):
-        """Data dictionary for object
-
-        :return: dict: dict with keys:
-        - ad_unit_hero_id
-        - ad_unit_hero_template_id
-        - ad_unit_inline_id
-        - division_id
-        - division_name
-        - is_ownership_pending
-        - league_name
-        - league_url
-        - location_country
-        - location_postal_code
-        - name
-        - owner_email
-        - owner_first_name
-        - owner_last_name
-        - season_name
-        - sport_id
-        - team
-        - time_zone
-        - type
-        """
-        return super().data
+    __slots__ = [
+        'ad_unit_hero_id',
+        'ad_unit_hero_template_id',
+        'ad_unit_inline_id',
+        'division_id',
+        'division_name',
+        'is_ownership_pending',
+        'league_name',
+        'league_url',
+        'location_country',
+        'location_postal_code',
+        'name',
+        'owner_email',
+        'owner_first_name',
+        'owner_last_name',
+        'season_name',
+        'sport_id',
+        'team',
+        'time_zone',
+    ]

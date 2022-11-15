@@ -1,4 +1,4 @@
-from .availability import Availability
+from .availability import Availability, AvailabilityStatusCode
 from .availabilitysummary import AvailabilitySummary
 from .event import Event
 from .eventlineup import EventLineup
@@ -13,7 +13,7 @@ from .team import Team
 from .user import User
 
 __all__ = [
-    "Availability",
+    "Availability", "AvailabilityStatusCode",
     "AvailabilitySummary",
     "Event",
     "EventLineup",
