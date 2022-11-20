@@ -87,33 +87,52 @@
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyteamsnap.models" title="Permalink to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Availability">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Availability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Availability" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Availability.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>event_id</p></li>
-<li><p>member_id</p></li>
-<li><p>notes</p></li>
-<li><p>notes_author_member_id</p></li>
-<li><p>source</p></li>
-<li><p>status_code</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Availability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Availability" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.event_id">
+<span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.event_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.is_current_user">
+<span class="sig-name descname"><span class="pre">is_current_user</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.is_current_user" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.member_id">
+<span class="sig-name descname"><span class="pre">member_id</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.member_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.notes">
+<span class="sig-name descname"><span class="pre">notes</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.notes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.notes_author_member_id">
+<span class="sig-name descname"><span class="pre">notes_author_member_id</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.notes_author_member_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Availability.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'availabilities'</span></em><a class="headerlink" href="#pyteamsnap.models.Availability.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.status">
+<span class="sig-name descname"><span class="pre">status</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.status" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.status_code">
+<span class="sig-name descname"><span class="pre">status_code</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.status_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Availability.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Availability.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Availability.type">
@@ -128,29 +147,89 @@
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">AvailabilitySummary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilityStatusCode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">AvailabilityStatusCode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.AvailabilityStatusCode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilityStatusCode.MAYBE">
+<span class="sig-name descname"><span class="pre">MAYBE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#pyteamsnap.models.AvailabilityStatusCode.MAYBE" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilityStatusCode.NO">
+<span class="sig-name descname"><span class="pre">NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#pyteamsnap.models.AvailabilityStatusCode.NO" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilityStatusCode.YES">
+<span class="sig-name descname"><span class="pre">YES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#pyteamsnap.models.AvailabilityStatusCode.YES" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">AvailabilitySummary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.event_id">
+<span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.event_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.going_count">
+<span class="sig-name descname"><span class="pre">going_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.going_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.maybe_count">
+<span class="sig-name descname"><span class="pre">maybe_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.maybe_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.not_going_count">
+<span class="sig-name descname"><span class="pre">not_going_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.not_going_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.player_going_count">
+<span class="sig-name descname"><span class="pre">player_going_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.player_going_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.player_maybe_count">
+<span class="sig-name descname"><span class="pre">player_maybe_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.player_maybe_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.player_not_going_count">
+<span class="sig-name descname"><span class="pre">player_not_going_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.player_not_going_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.player_unknown_count">
+<span class="sig-name descname"><span class="pre">player_unknown_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.player_unknown_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'availability_summaries'</span></em><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.type">
 <span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'availability_summary'</span></em><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.AvailabilitySummary.unknown_count">
+<span class="sig-name descname"><span class="pre">unknown_count</span></span><a class="headerlink" href="#pyteamsnap.models.AvailabilitySummary.unknown_count" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -162,71 +241,248 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Event">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Event" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Event" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
 <p>Associated object to a team; and represents an event or game that is tracked in the TeamSnap system.
 <a class="reference external" href="https://www.teamsnap.com/documentation/apiv3/objects#Events">https://www.teamsnap.com/documentation/apiv3/objects#Events</a></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Event.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Event.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with strings:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>type</p></li>
-<li><p>additional_location_details</p></li>
-<li><p>browser_time_zone</p></li>
-<li><p>division_location_id</p></li>
-<li><p>doesnt_count_towards_record</p></li>
-<li><p>duration_in_minutes</p></li>
-<li><p>game_type_code</p></li>
-<li><p>icon_color</p></li>
-<li><p>is_canceled</p></li>
-<li><p>is_game</p></li>
-<li><p>is_overtime</p></li>
-<li><p>is_shootout</p></li>
-<li><p>is_tbd</p></li>
-<li><p>label</p></li>
-<li><p>location_id</p></li>
-<li><p>minutes_to_arrive_early</p></li>
-<li><p>name</p></li>
-<li><p>notes</p></li>
-<li><p>notify_opponent</p></li>
-<li><p>notify_opponent_contacts_email</p></li>
-<li><p>notify_opponent_contacts_name</p></li>
-<li><p>notify_opponent_notes</p></li>
-<li><p>notify_team</p></li>
-<li><p>notify_team_as_member_id</p></li>
-<li><p>opponent_id</p></li>
-<li><p>points_for_opponent</p></li>
-<li><p>points_for_team</p></li>
-<li><p>repeating_include</p></li>
-<li><p>repeating_type_code</p></li>
-<li><p>repeating_until</p></li>
-<li><p>results</p></li>
-<li><p>results_url</p></li>
-<li><p>shootout_points_for_opponent</p></li>
-<li><p>shootout_points_for_team</p></li>
-<li><p>start_date</p></li>
-<li><p>team_id</p></li>
-<li><p>time_zone</p></li>
-<li><p>tracks_availability</p></li>
-<li><p>uniform</p></li>
-</ul>
-</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.additional_location_details">
+<span class="sig-name descname"><span class="pre">additional_location_details</span></span><a class="headerlink" href="#pyteamsnap.models.Event.additional_location_details" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.arrival_date">
+<span class="sig-name descname"><span class="pre">arrival_date</span></span><a class="headerlink" href="#pyteamsnap.models.Event.arrival_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#pyteamsnap.models.Event.created_at" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.division_location_id">
+<span class="sig-name descname"><span class="pre">division_location_id</span></span><a class="headerlink" href="#pyteamsnap.models.Event.division_location_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.doesnt_count_towards_record">
+<span class="sig-name descname"><span class="pre">doesnt_count_towards_record</span></span><a class="headerlink" href="#pyteamsnap.models.Event.doesnt_count_towards_record" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.duration_in_minutes">
+<span class="sig-name descname"><span class="pre">duration_in_minutes</span></span><a class="headerlink" href="#pyteamsnap.models.Event.duration_in_minutes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.end_date">
+<span class="sig-name descname"><span class="pre">end_date</span></span><a class="headerlink" href="#pyteamsnap.models.Event.end_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.formatted_results">
+<span class="sig-name descname"><span class="pre">formatted_results</span></span><a class="headerlink" href="#pyteamsnap.models.Event.formatted_results" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.formatted_title">
+<span class="sig-name descname"><span class="pre">formatted_title</span></span><a class="headerlink" href="#pyteamsnap.models.Event.formatted_title" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.formatted_title_for_multi_team">
+<span class="sig-name descname"><span class="pre">formatted_title_for_multi_team</span></span><a class="headerlink" href="#pyteamsnap.models.Event.formatted_title_for_multi_team" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.game_type">
+<span class="sig-name descname"><span class="pre">game_type</span></span><a class="headerlink" href="#pyteamsnap.models.Event.game_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.game_type_code">
+<span class="sig-name descname"><span class="pre">game_type_code</span></span><a class="headerlink" href="#pyteamsnap.models.Event.game_type_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.icon_color">
+<span class="sig-name descname"><span class="pre">icon_color</span></span><a class="headerlink" href="#pyteamsnap.models.Event.icon_color" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_canceled">
+<span class="sig-name descname"><span class="pre">is_canceled</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_canceled" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_game">
+<span class="sig-name descname"><span class="pre">is_game</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_game" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_league_controlled">
+<span class="sig-name descname"><span class="pre">is_league_controlled</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_league_controlled" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_overtime">
+<span class="sig-name descname"><span class="pre">is_overtime</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_overtime" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_shootout">
+<span class="sig-name descname"><span class="pre">is_shootout</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_shootout" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.is_tbd">
+<span class="sig-name descname"><span class="pre">is_tbd</span></span><a class="headerlink" href="#pyteamsnap.models.Event.is_tbd" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.label">
+<span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#pyteamsnap.models.Event.label" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.location_id">
+<span class="sig-name descname"><span class="pre">location_id</span></span><a class="headerlink" href="#pyteamsnap.models.Event.location_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.location_name">
+<span class="sig-name descname"><span class="pre">location_name</span></span><a class="headerlink" href="#pyteamsnap.models.Event.location_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.minutes_to_arrive_early">
+<span class="sig-name descname"><span class="pre">minutes_to_arrive_early</span></span><a class="headerlink" href="#pyteamsnap.models.Event.minutes_to_arrive_early" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pyteamsnap.models.Event.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.notes">
+<span class="sig-name descname"><span class="pre">notes</span></span><a class="headerlink" href="#pyteamsnap.models.Event.notes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.opponent_id">
+<span class="sig-name descname"><span class="pre">opponent_id</span></span><a class="headerlink" href="#pyteamsnap.models.Event.opponent_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.opponent_name">
+<span class="sig-name descname"><span class="pre">opponent_name</span></span><a class="headerlink" href="#pyteamsnap.models.Event.opponent_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.points_for_opponent">
+<span class="sig-name descname"><span class="pre">points_for_opponent</span></span><a class="headerlink" href="#pyteamsnap.models.Event.points_for_opponent" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.points_for_team">
+<span class="sig-name descname"><span class="pre">points_for_team</span></span><a class="headerlink" href="#pyteamsnap.models.Event.points_for_team" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Event.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'events'</span></em><a class="headerlink" href="#pyteamsnap.models.Event.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.repeating_type">
+<span class="sig-name descname"><span class="pre">repeating_type</span></span><a class="headerlink" href="#pyteamsnap.models.Event.repeating_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.repeating_type_code">
+<span class="sig-name descname"><span class="pre">repeating_type_code</span></span><a class="headerlink" href="#pyteamsnap.models.Event.repeating_type_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.repeating_uuid">
+<span class="sig-name descname"><span class="pre">repeating_uuid</span></span><a class="headerlink" href="#pyteamsnap.models.Event.repeating_uuid" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.results">
+<span class="sig-name descname"><span class="pre">results</span></span><a class="headerlink" href="#pyteamsnap.models.Event.results" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.results_url">
+<span class="sig-name descname"><span class="pre">results_url</span></span><a class="headerlink" href="#pyteamsnap.models.Event.results_url" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.shootout_points_for_opponent">
+<span class="sig-name descname"><span class="pre">shootout_points_for_opponent</span></span><a class="headerlink" href="#pyteamsnap.models.Event.shootout_points_for_opponent" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.shootout_points_for_team">
+<span class="sig-name descname"><span class="pre">shootout_points_for_team</span></span><a class="headerlink" href="#pyteamsnap.models.Event.shootout_points_for_team" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.source_time_zone_iana_name">
+<span class="sig-name descname"><span class="pre">source_time_zone_iana_name</span></span><a class="headerlink" href="#pyteamsnap.models.Event.source_time_zone_iana_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.start_date">
+<span class="sig-name descname"><span class="pre">start_date</span></span><a class="headerlink" href="#pyteamsnap.models.Event.start_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Event.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.time_zone">
+<span class="sig-name descname"><span class="pre">time_zone</span></span><a class="headerlink" href="#pyteamsnap.models.Event.time_zone" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.time_zone_description">
+<span class="sig-name descname"><span class="pre">time_zone_description</span></span><a class="headerlink" href="#pyteamsnap.models.Event.time_zone_description" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.time_zone_iana_name">
+<span class="sig-name descname"><span class="pre">time_zone_iana_name</span></span><a class="headerlink" href="#pyteamsnap.models.Event.time_zone_iana_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.time_zone_offset">
+<span class="sig-name descname"><span class="pre">time_zone_offset</span></span><a class="headerlink" href="#pyteamsnap.models.Event.time_zone_offset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.tracks_availability">
+<span class="sig-name descname"><span class="pre">tracks_availability</span></span><a class="headerlink" href="#pyteamsnap.models.Event.tracks_availability" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Event.type">
 <span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'event'</span></em><a class="headerlink" href="#pyteamsnap.models.Event.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.uniform">
+<span class="sig-name descname"><span class="pre">uniform</span></span><a class="headerlink" href="#pyteamsnap.models.Event.uniform" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Event.updated_at">
+<span class="sig-name descname"><span class="pre">updated_at</span></span><a class="headerlink" href="#pyteamsnap.models.Event.updated_at" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -238,27 +494,26 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.EventLineup">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">EventLineup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.EventLineup" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineup.data" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with strings:</p>
-</dd>
-</dl>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">EventLineup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.EventLineup" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.entries_count">
+<span class="sig-name descname"><span class="pre">entries_count</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineup.entries_count" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.event_id">
+<span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineup.event_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.is_published">
+<span class="sig-name descname"><span class="pre">is_published</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineup.is_published" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'event_lineups'</span></em><a class="headerlink" href="#pyteamsnap.models.EventLineup.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pyteamsnap.models.EventLineup.template">
-<span class="sig-name descname"><span class="pre">template</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#pyteamsnap.models.EventLineup.template" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -275,33 +530,67 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">EventLineupEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.data" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with strings:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>member_id</p></li>
-<li><p>sequence</p></li>
-<li><p>label</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">EventLineupEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.availability_status_code">
+<span class="sig-name descname"><span class="pre">availability_status_code</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.availability_status_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.event_id">
+<span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.event_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.event_lineup_id">
+<span class="sig-name descname"><span class="pre">event_lineup_id</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.event_lineup_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.label">
+<span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.label" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.member_id">
+<span class="sig-name descname"><span class="pre">member_id</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.member_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.member_name">
+<span class="sig-name descname"><span class="pre">member_name</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.member_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.member_photo">
+<span class="sig-name descname"><span class="pre">member_photo</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.member_photo" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'event_lineup_entries'</span></em><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.search">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.search" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> – </p></li>
+<li><p><strong>kwargs</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of TeamSnapBaseObjects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.EventLineupEntry.sequence">
+<span class="sig-name descname"><span class="pre">sequence</span></span><a class="headerlink" href="#pyteamsnap.models.EventLineupEntry.sequence" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -318,40 +607,61 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Location">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Location" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Location.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Location.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>name</p></li>
-<li><p>url</p></li>
-<li><p>phone</p></li>
-<li><p>notes</p></li>
-<li><p>address</p></li>
-<li><p>latitude</p></li>
-<li><p>longitude</p></li>
-<li><p>team_id</p></li>
-<li><p>is_retired</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Location" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.address">
+<span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#pyteamsnap.models.Location.address" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.is_retired">
+<span class="sig-name descname"><span class="pre">is_retired</span></span><a class="headerlink" href="#pyteamsnap.models.Location.is_retired" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.latitude">
+<span class="sig-name descname"><span class="pre">latitude</span></span><a class="headerlink" href="#pyteamsnap.models.Location.latitude" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.longitude">
+<span class="sig-name descname"><span class="pre">longitude</span></span><a class="headerlink" href="#pyteamsnap.models.Location.longitude" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pyteamsnap.models.Location.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.notes">
+<span class="sig-name descname"><span class="pre">notes</span></span><a class="headerlink" href="#pyteamsnap.models.Location.notes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.phone">
+<span class="sig-name descname"><span class="pre">phone</span></span><a class="headerlink" href="#pyteamsnap.models.Location.phone" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Location.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'locations'</span></em><a class="headerlink" href="#pyteamsnap.models.Location.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Location.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Location.type">
 <span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'location'</span></em><a class="headerlink" href="#pyteamsnap.models.Location.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Location.url">
+<span class="sig-name descname"><span class="pre">url</span></span><a class="headerlink" href="#pyteamsnap.models.Location.url" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -363,16 +673,60 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Me">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Me" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Me" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#pyteamsnap.models.User" title="pyteamsnap.models.user.User"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a></p>
 <p>The current user’s object. It is not possible to create or delete users via the API;
 however, it is possible to update data on a user’s record.
 <a class="reference external" href="https://www.teamsnap.com/documentation/apiv3/objects#Me">https://www.teamsnap.com/documentation/apiv3/objects#Me</a></p>
 <dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.birthday">
+<span class="sig-name descname"><span class="pre">birthday</span></span><a class="headerlink" href="#pyteamsnap.models.Me.birthday" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#pyteamsnap.models.Me.email" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.facebook_access_token">
+<span class="sig-name descname"><span class="pre">facebook_access_token</span></span><a class="headerlink" href="#pyteamsnap.models.Me.facebook_access_token" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.facebook_id">
+<span class="sig-name descname"><span class="pre">facebook_id</span></span><a class="headerlink" href="#pyteamsnap.models.Me.facebook_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#pyteamsnap.models.Me.first_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.is_lab_rat">
+<span class="sig-name descname"><span class="pre">is_lab_rat</span></span><a class="headerlink" href="#pyteamsnap.models.Me.is_lab_rat" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#pyteamsnap.models.Me.last_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#pyteamsnap.models.Me.password" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Me.receives_newsletter">
+<span class="sig-name descname"><span class="pre">receives_newsletter</span></span><a class="headerlink" href="#pyteamsnap.models.Me.receives_newsletter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Me.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'me'</span></em><a class="headerlink" href="#pyteamsnap.models.Me.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Me.type">
@@ -388,49 +742,114 @@ however, it is possible to update data on a user’s record.
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Member">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Member</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Member" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Member</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Member" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
 <p>A member (also referred to as a roster in our web and mobile apps) is a member of a team.
 <a class="reference external" href="https://www.teamsnap.com/documentation/apiv3/objects#Members">https://www.teamsnap.com/documentation/apiv3/objects#Members</a></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Member.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Member.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>first_name</p></li>
-<li><p>last_name</p></li>
-<li><p>address_city</p></li>
-<li><p>address_state</p></li>
-<li><p>address_street1</p></li>
-<li><p>address_street2</p></li>
-<li><p>address_zip</p></li>
-<li><p>birthday</p></li>
-<li><p>gender</p></li>
-<li><p>hide_address</p></li>
-<li><p>hide_age</p></li>
-<li><p>is_address_hidden</p></li>
-<li><p>is_age_hidden</p></li>
-<li><p>is_manager</p></li>
-<li><p>is_non_player</p></li>
-<li><p>is_ownership_pending</p></li>
-<li><p>jersey_number</p></li>
-<li><p>position</p></li>
-<li><p>source_action</p></li>
-<li><p>team_id</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.address_city">
+<span class="sig-name descname"><span class="pre">address_city</span></span><a class="headerlink" href="#pyteamsnap.models.Member.address_city" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.address_state">
+<span class="sig-name descname"><span class="pre">address_state</span></span><a class="headerlink" href="#pyteamsnap.models.Member.address_state" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.address_street1">
+<span class="sig-name descname"><span class="pre">address_street1</span></span><a class="headerlink" href="#pyteamsnap.models.Member.address_street1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.address_street2">
+<span class="sig-name descname"><span class="pre">address_street2</span></span><a class="headerlink" href="#pyteamsnap.models.Member.address_street2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.address_zip">
+<span class="sig-name descname"><span class="pre">address_zip</span></span><a class="headerlink" href="#pyteamsnap.models.Member.address_zip" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.birthday">
+<span class="sig-name descname"><span class="pre">birthday</span></span><a class="headerlink" href="#pyteamsnap.models.Member.birthday" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#pyteamsnap.models.Member.first_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.gender">
+<span class="sig-name descname"><span class="pre">gender</span></span><a class="headerlink" href="#pyteamsnap.models.Member.gender" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.hide_address">
+<span class="sig-name descname"><span class="pre">hide_address</span></span><a class="headerlink" href="#pyteamsnap.models.Member.hide_address" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.hide_age">
+<span class="sig-name descname"><span class="pre">hide_age</span></span><a class="headerlink" href="#pyteamsnap.models.Member.hide_age" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.is_address_hidden">
+<span class="sig-name descname"><span class="pre">is_address_hidden</span></span><a class="headerlink" href="#pyteamsnap.models.Member.is_address_hidden" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.is_age_hidden">
+<span class="sig-name descname"><span class="pre">is_age_hidden</span></span><a class="headerlink" href="#pyteamsnap.models.Member.is_age_hidden" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.is_manager">
+<span class="sig-name descname"><span class="pre">is_manager</span></span><a class="headerlink" href="#pyteamsnap.models.Member.is_manager" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.is_non_player">
+<span class="sig-name descname"><span class="pre">is_non_player</span></span><a class="headerlink" href="#pyteamsnap.models.Member.is_non_player" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.is_ownership_pending">
+<span class="sig-name descname"><span class="pre">is_ownership_pending</span></span><a class="headerlink" href="#pyteamsnap.models.Member.is_ownership_pending" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.jersey_number">
+<span class="sig-name descname"><span class="pre">jersey_number</span></span><a class="headerlink" href="#pyteamsnap.models.Member.jersey_number" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#pyteamsnap.models.Member.last_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.position">
+<span class="sig-name descname"><span class="pre">position</span></span><a class="headerlink" href="#pyteamsnap.models.Member.position" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Member.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'members'</span></em><a class="headerlink" href="#pyteamsnap.models.Member.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.source_action">
+<span class="sig-name descname"><span class="pre">source_action</span></span><a class="headerlink" href="#pyteamsnap.models.Member.source_action" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Member.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Member.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Member.type">
@@ -446,45 +865,113 @@ however, it is possible to update data on a user’s record.
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">MemberStatistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">MemberStatistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.average">
+<span class="sig-name descname"><span class="pre">average</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.average" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.average_ranking">
+<span class="sig-name descname"><span class="pre">average_ranking</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.average_ranking" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.average_ranking_for_query">
+<span class="sig-name descname"><span class="pre">average_ranking_for_query</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.average_ranking_for_query" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.count_games_played">
+<span class="sig-name descname"><span class="pre">count_games_played</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.count_games_played" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.member_id">
+<span class="sig-name descname"><span class="pre">member_id</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.member_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'member_statistics'</span></em><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.statistic_id">
+<span class="sig-name descname"><span class="pre">statistic_id</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.statistic_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.total">
+<span class="sig-name descname"><span class="pre">total</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.total" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.total_ranking">
+<span class="sig-name descname"><span class="pre">total_ranking</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.total_ranking" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.total_ranking_for_query">
+<span class="sig-name descname"><span class="pre">total_ranking_for_query</span></span><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.total_ranking_for_query" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.MemberStatistics.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'member_statistic'</span></em><a class="headerlink" href="#pyteamsnap.models.MemberStatistics.type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Opponent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Opponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Opponent" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>name</p></li>
-<li><p>contacts_name</p></li>
-<li><p>contacts_phone</p></li>
-<li><p>contacts_email</p></li>
-<li><p>notes</p></li>
-<li><p>team_id</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Opponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Opponent" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.contacts_email">
+<span class="sig-name descname"><span class="pre">contacts_email</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.contacts_email" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.contacts_name">
+<span class="sig-name descname"><span class="pre">contacts_name</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.contacts_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.contacts_phone">
+<span class="sig-name descname"><span class="pre">contacts_phone</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.contacts_phone" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.notes">
+<span class="sig-name descname"><span class="pre">notes</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.notes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Opponent.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'opponents'</span></em><a class="headerlink" href="#pyteamsnap.models.Opponent.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Opponent.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Opponent.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Opponent.type">
@@ -500,40 +987,77 @@ however, it is possible to update data on a user’s record.
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Statistics">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Statistics" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>acronym</p></li>
-<li><p>always_display_decimals</p></li>
-<li><p>formula</p></li>
-<li><p>is_in_descending_order</p></li>
-<li><p>display_zero_totals</p></li>
-<li><p>is_percentage</p></li>
-<li><p>is_private</p></li>
-<li><p>is_team_statistic</p></li>
-<li><p>is_top_statistic</p></li>
-<li><p>name</p></li>
-<li><p>precision</p></li>
-<li><p>statistic_group_id</p></li>
-<li><p>team_id</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Statistics" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.acronym">
+<span class="sig-name descname"><span class="pre">acronym</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.acronym" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.always_display_decimals">
+<span class="sig-name descname"><span class="pre">always_display_decimals</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.always_display_decimals" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.display_zero_totals">
+<span class="sig-name descname"><span class="pre">display_zero_totals</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.display_zero_totals" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.formula">
+<span class="sig-name descname"><span class="pre">formula</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.formula" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.is_in_descending_order">
+<span class="sig-name descname"><span class="pre">is_in_descending_order</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.is_in_descending_order" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.is_percentage">
+<span class="sig-name descname"><span class="pre">is_percentage</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.is_percentage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.is_private">
+<span class="sig-name descname"><span class="pre">is_private</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.is_private" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.is_team_statistic">
+<span class="sig-name descname"><span class="pre">is_team_statistic</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.is_team_statistic" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.is_top_statistic">
+<span class="sig-name descname"><span class="pre">is_top_statistic</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.is_top_statistic" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.precision">
+<span class="sig-name descname"><span class="pre">precision</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.precision" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Statistics.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'statistics'</span></em><a class="headerlink" href="#pyteamsnap.models.Statistics.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.statistic_group_id">
+<span class="sig-name descname"><span class="pre">statistic_group_id</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.statistic_group_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Statistics.team_id">
+<span class="sig-name descname"><span class="pre">team_id</span></span><a class="headerlink" href="#pyteamsnap.models.Statistics.team_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Statistics.type">
@@ -549,47 +1073,104 @@ however, it is possible to update data on a user’s record.
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.Team">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Team</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Team" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">Team</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.Team" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
 <p>Associated teams from your origin object. Full CRUD is possible with the teams endpoint.
 <a class="reference external" href="https://www.teamsnap.com/documentation/apiv3/objects#Teams">https://www.teamsnap.com/documentation/apiv3/objects#Teams</a></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.Team.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.Team.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>ad_unit_hero_id</p></li>
-<li><p>ad_unit_hero_template_id</p></li>
-<li><p>ad_unit_inline_id</p></li>
-<li><p>division_id</p></li>
-<li><p>division_name</p></li>
-<li><p>is_ownership_pending</p></li>
-<li><p>league_name</p></li>
-<li><p>league_url</p></li>
-<li><p>location_country</p></li>
-<li><p>location_postal_code</p></li>
-<li><p>name</p></li>
-<li><p>owner_email</p></li>
-<li><p>owner_first_name</p></li>
-<li><p>owner_last_name</p></li>
-<li><p>season_name</p></li>
-<li><p>sport_id</p></li>
-<li><p>team</p></li>
-<li><p>time_zone</p></li>
-<li><p>type</p></li>
-</ul>
-</dd></dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.ad_unit_hero_id">
+<span class="sig-name descname"><span class="pre">ad_unit_hero_id</span></span><a class="headerlink" href="#pyteamsnap.models.Team.ad_unit_hero_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.ad_unit_hero_template_id">
+<span class="sig-name descname"><span class="pre">ad_unit_hero_template_id</span></span><a class="headerlink" href="#pyteamsnap.models.Team.ad_unit_hero_template_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.ad_unit_inline_id">
+<span class="sig-name descname"><span class="pre">ad_unit_inline_id</span></span><a class="headerlink" href="#pyteamsnap.models.Team.ad_unit_inline_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.division_id">
+<span class="sig-name descname"><span class="pre">division_id</span></span><a class="headerlink" href="#pyteamsnap.models.Team.division_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.division_name">
+<span class="sig-name descname"><span class="pre">division_name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.division_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.is_ownership_pending">
+<span class="sig-name descname"><span class="pre">is_ownership_pending</span></span><a class="headerlink" href="#pyteamsnap.models.Team.is_ownership_pending" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.league_name">
+<span class="sig-name descname"><span class="pre">league_name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.league_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.league_url">
+<span class="sig-name descname"><span class="pre">league_url</span></span><a class="headerlink" href="#pyteamsnap.models.Team.league_url" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.location_country">
+<span class="sig-name descname"><span class="pre">location_country</span></span><a class="headerlink" href="#pyteamsnap.models.Team.location_country" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.location_postal_code">
+<span class="sig-name descname"><span class="pre">location_postal_code</span></span><a class="headerlink" href="#pyteamsnap.models.Team.location_postal_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.owner_email">
+<span class="sig-name descname"><span class="pre">owner_email</span></span><a class="headerlink" href="#pyteamsnap.models.Team.owner_email" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.owner_first_name">
+<span class="sig-name descname"><span class="pre">owner_first_name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.owner_first_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.owner_last_name">
+<span class="sig-name descname"><span class="pre">owner_last_name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.owner_last_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Team.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'teams'</span></em><a class="headerlink" href="#pyteamsnap.models.Team.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.season_name">
+<span class="sig-name descname"><span class="pre">season_name</span></span><a class="headerlink" href="#pyteamsnap.models.Team.season_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.sport_id">
+<span class="sig-name descname"><span class="pre">sport_id</span></span><a class="headerlink" href="#pyteamsnap.models.Team.sport_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.team">
+<span class="sig-name descname"><span class="pre">team</span></span><a class="headerlink" href="#pyteamsnap.models.Team.team" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.Team.time_zone">
+<span class="sig-name descname"><span class="pre">time_zone</span></span><a class="headerlink" href="#pyteamsnap.models.Team.time_zone" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.Team.type">
@@ -605,36 +1186,78 @@ however, it is possible to update data on a user’s record.
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pyteamsnap.models.User">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">APIClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.User" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseApiObject</span></code></p>
-<dl class="py property">
-<dt class="sig sig-object py" id="pyteamsnap.models.User.data">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#pyteamsnap.models.User.data" title="Permalink to this definition"></a></dt>
-<dd><p>Data dictionary for object</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>dict: dict with keys:</p>
-</dd>
-</dl>
-<ul class="simple">
-<li><p>first_name</p></li>
-<li><p>last_name</p></li>
-<li><p>password</p></li>
-<li><p>birthday</p></li>
-<li><p>email</p></li>
-<li><p>facebook_id</p></li>
-<li><p>facebook_access_token</p></li>
-<li><p>type</p></li>
-<li><p>is_lab_rat</p></li>
-<li><p>receives_newsletter</p></li>
-</ul>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyteamsnap.models.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="pyteamsnap.html#pyteamsnap.client.TeamSnap" title="pyteamsnap.client.TeamSnap"><span class="pre">TeamSnap</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.User" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTeamsnapObject</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.birthday">
+<span class="sig-name descname"><span class="pre">birthday</span></span><a class="headerlink" href="#pyteamsnap.models.User.birthday" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.User.delete" title="Permalink to this definition"></a></dt>
+<dd><p>It is not possible to create or delete users via the API;
+however, it is possible to update data on a user’s record.</p>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#pyteamsnap.models.User.email" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.facebook_access_token">
+<span class="sig-name descname"><span class="pre">facebook_access_token</span></span><a class="headerlink" href="#pyteamsnap.models.User.facebook_access_token" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.facebook_id">
+<span class="sig-name descname"><span class="pre">facebook_id</span></span><a class="headerlink" href="#pyteamsnap.models.User.facebook_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#pyteamsnap.models.User.first_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.is_lab_rat">
+<span class="sig-name descname"><span class="pre">is_lab_rat</span></span><a class="headerlink" href="#pyteamsnap.models.User.is_lab_rat" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#pyteamsnap.models.User.last_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.new">
+<span class="sig-name descname"><span class="pre">new</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.User.new" title="Permalink to this definition"></a></dt>
+<dd><p>It is not possible to create or delete users via the API;
+however, it is possible to update data on a user’s record.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#pyteamsnap.models.User.password" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyteamsnap.models.User.post" title="Permalink to this definition"></a></dt>
+<dd><p>It is not possible to create or delete users via the API;
+however, it is possible to update data on a user’s record.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyteamsnap.models.User.receives_newsletter">
+<span class="sig-name descname"><span class="pre">receives_newsletter</span></span><a class="headerlink" href="#pyteamsnap.models.User.receives_newsletter" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.User.rel">
 <span class="sig-name descname"><span class="pre">rel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'users'</span></em><a class="headerlink" href="#pyteamsnap.models.User.rel" title="Permalink to this definition"></a></dt>
-<dd><p>rel: Relationship between a linked resource and the current document</p>
-</dd></dl>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyteamsnap.models.User.type">

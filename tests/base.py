@@ -8,7 +8,7 @@ from unittest import TestCase
 
 from pyteamsnap import client
 from os import getenv
-from pyteamsnap.models.base import BaseApiObject
+from pyteamsnap.models.base import BaseTeamsnapObject
 import vcr
 TEAMSNAP_TOKEN = getenv('TEAMSNAP_TOKEN')
 TEAMSNAP_TEAM = getenv('TEAMSNAP_TEAM')
@@ -17,13 +17,14 @@ TEAMSNAP_EVENT = getenv('TEAMSNAP_EVENT')
 vcr_options = {
     'decode_compressed_response': True,
     'cassette_library_dir':'tests/fixtures/cassettes',
+    'record_mode':'new_episodes',
     'filter_headers':['authorization']
 }
 
 class BaseModelTestCase:
     """Tests for `pyteamsnap` package."""
     __test__= False
-    TestClass: BaseApiObject = None
+    TestClass: BaseTeamsnapObject = None
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -42,6 +43,10 @@ class BaseModelTestCase:
         instance = search_results[0]
         self.assertIsInstance(instance, self.TestClass)
         self.assertTrue(len(instance.data))
+
+        retrieved_instance = self.TestClass.get(self.client, instance.id)
+        self.assertIsInstance(retrieved_instance, self.TestClass)
+        self.assertTrue(len(retrieved_instance.data))
         return instance
 
 

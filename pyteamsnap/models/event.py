@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Event(BaseApiObject):
+class Event(BaseTeamsnapObject):
     """Associated object to a team; and represents an event or game that is tracked in the TeamSnap system.
     https://www.teamsnap.com/documentation/apiv3/objects#Events
 

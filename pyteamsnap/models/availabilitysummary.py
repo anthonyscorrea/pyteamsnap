@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class AvailabilitySummary(BaseApiObject):
+class AvailabilitySummary(BaseTeamsnapObject):
     rel = "availability_summaries"
     type = "availability_summary"
     version = "3.866.0"
@@ -18,3 +18,6 @@ class AvailabilitySummary(BaseApiObject):
         "player_maybe_count",
         "player_unknown_count",
     ]
+
+    def __str__(self):
+        return f"{self.going_count} going, {self.maybe_count} maybe going, {self.not_going_count} not going, {self.unknown_count} unknown."

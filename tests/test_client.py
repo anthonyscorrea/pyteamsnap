@@ -8,7 +8,7 @@ from unittest import TestCase
 
 from pyteamsnap import client
 from os import getenv
-from pyteamsnap.models.base import BaseApiObject
+from pyteamsnap.models.base import BaseTeamsnapObject
 import vcr
 TEAMSNAP_TOKEN = getenv('TEAMSNAP_TOKEN')
 TEAMSNAP_TEAM = getenv('TEAMSNAP_TEAM')

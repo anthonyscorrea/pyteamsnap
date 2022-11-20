@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Member(BaseApiObject):
+class Member(BaseTeamsnapObject):
     """A member (also referred to as a roster in our web and mobile apps) is a member of a team.
     https://www.teamsnap.com/documentation/apiv3/objects#Members
 
@@ -36,6 +36,3 @@ class Member(BaseApiObject):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-
-    def __repr__(self):
-        return f'<TeamSnap {self.__class__.__name__} id={self.id} first_name="{self.first_name}" last_name="{self.last_name}">'

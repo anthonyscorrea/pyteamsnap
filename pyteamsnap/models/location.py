@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Location(BaseApiObject):
+class Location(BaseTeamsnapObject):
     rel = "locations"
     type = "location"
     version = "3.866.0"

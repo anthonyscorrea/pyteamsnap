@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Statistics(BaseApiObject):
+class Statistics(BaseTeamsnapObject):
     rel = "statistics"
     type = "statistic"
     version = "3.866.0"

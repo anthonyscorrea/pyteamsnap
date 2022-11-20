@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Opponent(BaseApiObject):
+class Opponent(BaseTeamsnapObject):
     rel = "opponents"
     type = "opponent"
     version = "3.866.0"

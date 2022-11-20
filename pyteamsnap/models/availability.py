@@ -1,4 +1,4 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 from enum import Enum
 
 class AvailabilityStatusCode(Enum):
@@ -6,7 +6,7 @@ class AvailabilityStatusCode(Enum):
     MAYBE = 2
     NO = 0
 
-class Availability(BaseApiObject):
+class Availability(BaseTeamsnapObject):
     rel = "availabilities"
     type = "availability"
     version = "3.866.0"

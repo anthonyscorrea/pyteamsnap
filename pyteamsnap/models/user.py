@@ -1,7 +1,7 @@
-from .base import BaseApiObject, NotPossibleError
+from .base import BaseTeamsnapObject, NotPossibleError
 
 
-class User(BaseApiObject):
+class User(BaseTeamsnapObject):
 
     rel = "users"
     type = "user"

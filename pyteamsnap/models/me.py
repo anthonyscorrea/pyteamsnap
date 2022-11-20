@@ -11,7 +11,3 @@ class Me(User):
     rel = "me"
     type = "user"
     version = "3.866.0"
-
-    def __new__(self, client):
-        data = client.parse_response(client.get(client.link(self.rel)))[0]
-        return User(client=client, data=data)

@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class Team(BaseApiObject):
+class Team(BaseTeamsnapObject):
     """Associated teams from your origin object. Full CRUD is possible with the teams endpoint.
     https://www.teamsnap.com/documentation/apiv3/objects#Teams
 

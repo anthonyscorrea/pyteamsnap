@@ -1,7 +1,7 @@
-from .base import BaseApiObject
+from .base import BaseTeamsnapObject
 
 
-class EventLineup(BaseApiObject):
+class EventLineup(BaseTeamsnapObject):
     rel = "event_lineups"
     type = "event_lineup"
     version = "3.866.0"
